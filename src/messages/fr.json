@@ -1,0 +1,538 @@
+{
+  "common": {
+    "logo": "Barter Force",
+    "tagline": "Les finances, en toute clarté.",
+    "skipToContent": "Passer au contenu principal"
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "howItWorks": "Comment ça marche",
+    "about": "À propos",
+    "learning": "Centre d'apprentissage",
+    "contact": "Contact",
+    "bookConsultation": "Prendre rendez-vous",
+    "menu": "Menu"
+  },
+  "hero": {
+    "headline": "Les finances, en toute clarté.",
+    "subheadline": "Un accompagnement financier privé pour celles et ceux qui ne se sont jamais sentis à l'aise avec la finance. Pas de jargon. Pas de pression. Juste un courtier de confiance qui explique chaque option avant que vous décidiez.",
+    "primaryCta": "Réserver une consultation gratuite",
+    "secondaryCta": "Voir comment je peux aider"
+  },
+  "intro": {
+    "title": "Nul besoin de comprendre la finance pour bien y réussir.",
+    "paragraph1": "La plupart des gens n'ont jamais appris comment fonctionne l'argent. On leur remet des formulaires, des pourcentages et des acronymes, et on leur demande de signer. Ce n'est pas de l'accompagnement.",
+    "paragraph2": "En tant que courtier, mon rôle est de traduire. J'examine votre situation, je présente vos choix dans un langage courant et je compare le coût réel de chacun, afin que votre décision soit une décision que vous comprenez vraiment."
+  },
+  "homeServices": {
+    "title": "Là où je peux vous aider"
+  },
+  "processStrip": {
+    "title": "Comment nous travaillerons ensemble",
+    "steps": [
+      {
+        "title": "Nous discutons",
+        "description": "Une conversation gratuite sur votre situation actuelle et vos objectifs."
+      },
+      {
+        "title": "Je fais les comparaisons",
+        "description": "Je prépare un résumé clair des coûts, des avantages et des compromis."
+      },
+      {
+        "title": "Vous décidez",
+        "description": "Nous passons le plan en revue ensemble et vous choisissez à votre rythme."
+      }
+    ]
+  },
+  "promise": {
+    "title": "Ma promesse envers vous",
+    "items": [
+      "Un langage simple, toujours. Si un mot demande un dictionnaire, je l'explique d'abord.",
+      "Vos intérêts passent en premier. Je vous dirai quand une option ne vous convient pas, même si elle est plus facile à vendre.",
+      "Transparence totale sur les coûts. Vous savez ce que coûte chaque option et comment je suis rémunéré avant de vous engager.",
+      "Discrétion. Vos renseignements financiers restent confidentiels et ne sont communiqués qu'avec votre consentement."
+    ]
+  },
+  "testimonials": [],
+  "finalCta": {
+    "title": "Commençons par une conversation.",
+    "description": "Votre première consultation est gratuite et sans engagement. Dites-moi ce que vous avez en tête et je vous répondrai personnellement en un jour ouvrable.",
+    "button": "Réserver une consultation gratuite"
+  },
+  "glossary": {
+    "title": "La finance, traduite"
+  },
+  "services": {
+    "title": "Services",
+    "description": "Quatre domaines, une seule approche : des explications claires, des comparaisons honnêtes et votre décision, toujours.",
+    "learnMore": "En savoir plus →",
+    "licenceNotice": "[TODO: les services présentés ci-dessous sont des ébauches. Confirmer quels services sont couverts par le permis du courtier avant le lancement et retirer ceux qui ne sont pas autorisés.]",
+    "labels": {
+      "whoFor": "À qui s'adresse ce service",
+      "whatWeDo": "Ce que nous ferons ensemble",
+      "whatYouReceive": "Ce que vous recevrez",
+      "commonQuestions": "Questions fréquentes"
+    },
+    "cards": [
+      {
+        "title": "Hypothèques et financement",
+        "description": "Achat, renouvellement ou refinancement, avec des prêteurs comparés pour vous."
+      },
+      {
+        "title": "Épargne et placements",
+        "description": "Les bons comptes et un plan adapté à vos objectifs et à votre tolérance au risque."
+      },
+      {
+        "title": "Santé du crédit",
+        "description": "Comprenez votre profil et suivez un parcours clair pour le renforcer."
+      },
+      {
+        "title": "Planification de la protection",
+        "description": "Assurez-vous que votre revenu, votre famille et vos biens sont protégés sans payer trop cher."
+      }
+    ],
+    "items": {
+      "mortgages": {
+        "headline": "Votre maison, sans la confusion.",
+        "whoFor": "Acheteurs d'une première propriété, propriétaires approchant du renouvellement et toute personne envisageant un refinancement.",
+        "intro": "Une hypothèque est probablement le plus important engagement que vous signerez. Je m'assure que vous comprenez ce à quoi vous consentez avant de consentir.",
+        "whatWeDo": [
+          "Examiner vos revenus, votre épargne et vos objectifs pour établir un budget confortable.",
+          "Expliquer les choix clés en termes simples : taux fixe ou variable, durée du terme et temps nécessaire pour rembourser.",
+          "Comparer les offres de [TODO: nombre] prêteurs et vous montrer le coût réel de chacune, y compris les pénalités en cas de remboursement anticipé.",
+          "Vous accompagner dans la préapprobation, l'offre et la signature."
+        ],
+        "whatYouReceive": [
+          "Une comparaison d'une page de vos meilleures options.",
+          "Une explication claire de chaque chiffre de votre offre.",
+          "Un rappel avant votre renouvellement pour que vous ne renouveliez jamais par défaut."
+        ],
+        "commonQuestions": [
+          {
+            "question": "Quelle est la différence entre un terme et une période d'amortissement?",
+            "answer": "Le terme est la durée de votre contrat de taux. L'amortissement est la durée totale nécessaire pour rembourser le prêt."
+          },
+          {
+            "question": "Demander une préapprobation nuira-t-il à mon crédit?",
+            "answer": "[TODO: insérer une explication exacte confirmée avec vos prêteurs]"
+          },
+          {
+            "question": "Dois-je vous payer pour ce service?",
+            "answer": "[TODO: indiquer comment vous êtes rémunéré — voir Frais et transparence]"
+          }
+        ],
+        "cta": "Parler de mon hypothèque"
+      },
+      "savingsInvesting": {
+        "headline": "Faites travailler votre argent, à votre rythme.",
+        "whoFor": "Premiers investisseurs et épargnants qui ne savent pas par où commencer.",
+        "intro": "Nul besoin d'une grosse somme ni d'un diplôme en finance pour commencer. Nous partons de vos objectifs, puis nous choisissons les comptes et produits les plus simples qui leur conviennent.",
+        "whatWeDo": [
+          "Clarifier vos objectifs : un fonds d'urgence, une maison, la retraite ou les études d'un enfant.",
+          "Présenter les principaux comptes en langage courant, comme le CELI et le REER, et expliquer comment chacun est imposé.",
+          "Discuter de votre aisance face aux hauts et aux bas afin que le plan soit un plan que vous pouvez maintenir.",
+          "Mettre en place un plan et un calendrier de suivi simple."
+        ],
+        "whatYouReceive": [
+          "Un plan écrit en langage courant.",
+          "Une explication de chaque produit et de ses frais avant l'achat.",
+          "Des suivis réguliers [TODO: confirmer la fréquence]."
+        ],
+        "commonQuestions": [
+          {
+            "question": "De combien ai-je besoin pour commencer?",
+            "answer": "[TODO: insérer vos minimums réels]"
+          },
+          {
+            "question": "Puis-je perdre de l'argent?",
+            "answer": "Oui. Les placements comportent des risques et les rendements ne sont jamais garantis. J'expliquerai le risque de chaque option avant que vous ne décidiez."
+          },
+          {
+            "question": "Qu'est-ce que la diversification?",
+            "answer": "Répartir votre argent entre différents placements afin qu'un mauvais résultat n'anéantisse pas tout votre plan."
+          }
+        ],
+        "cta": "Commencer par une conversation"
+      },
+      "creditHealth": {
+        "headline": "Un parcours clair vers un meilleur profil de crédit.",
+        "whoFor": "Personnes qui débutent, nouveaux arrivants qui bâtissent un dossier, ou toute personne qui se rétablit après une période difficile.",
+        "intro": "Votre dossier de crédit est un registre, pas un verdict. Nous l'examinons ensemble, sans jugement, et choisissons des mesures qui font une réelle différence.",
+        "whatWeDo": [
+          "Examiner votre rapport de crédit ensemble et expliquer chaque section.",
+          "Repérer ce qui aide et ce qui freine votre profil.",
+          "Élaborer un plan étape par étape avec des échéanciers réalistes.",
+          "Vous préparer à vos futurs emprunts, comme une hypothèque ou un prêt auto."
+        ],
+        "whatYouReceive": [
+          "Un plan d'action de crédit personnalisé.",
+          "Des conseils sur les habitudes qui renforcent votre profil.",
+          "Aucune promesse de résultats du jour au lendemain, car il n'y en a pas."
+        ],
+        "commonQuestions": [
+          {
+            "question": "Pouvez-vous effacer des éléments négatifs exacts?",
+            "answer": "Non. Méfiez-vous de quiconque le promet. [TODO: confirmer la formulation avec votre organisme de réglementation ou votre avocat]"
+          },
+          {
+            "question": "Combien de temps faut-il pour rebâtir son crédit?",
+            "answer": "Cela dépend de votre historique. Je vous donnerai une estimation honnête après avoir examiné votre rapport."
+          }
+        ],
+        "cta": "Examiner mon parcours de crédit"
+      },
+      "protection": {
+        "headline": "La tranquillité d'esprit pour les personnes et les biens qui comptent pour vous.",
+        "whoFor": "Familles, propriétaires et travailleurs autonomes.",
+        "intro": "La protection consiste à répondre à une question : que se passerait-il si la vie changeait soudainement? Nous l'abordons calmement et ne couvrons que ce dont vous avez réellement besoin.",
+        "whatWeDo": [
+          "Dresser la liste de ce que vous voulez protéger : revenu, famille, maison, entreprise.",
+          "Montrer où se trouvent les lacunes, en termes simples.",
+          "Comparer les protections de [TODO: assureurs ou partenaires] et expliquer les exclusions et les coûts.",
+          "Faire une révision annuelle à mesure que votre vie change."
+        ],
+        "whatYouReceive": [
+          "Un résumé simple de vos besoins.",
+          "Une comparaison côte à côte sans mauvaises surprises dans les petits caractères."
+        ],
+        "commonQuestions": [
+          {
+            "question": "Me vend-on plus que ce dont j'ai besoin?",
+            "answer": "Mon rôle est de ne recommander que ce qui convient. Si vous êtes déjà couvert, je vous le dirai."
+          },
+          {
+            "question": "Combien cela coûte-t-il?",
+            "answer": "[TODO: expliquer comment les prix sont présentés et la rémunération divulguée]"
+          }
+        ],
+        "cta": "Revoir ma protection"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Un processus simple et serein.",
+    "stepLabels": {
+      "whatHappens": "Ce qui se passe",
+      "whatYouDo": "Ce que vous faites"
+    },
+    "steps": [
+      {
+        "title": "Conversation gratuite",
+        "whatHappens": "Un appel ou une rencontre de 30 à 45 minutes [TODO: confirmer la durée]. J'écoute et je vous interroge sur vos objectifs.",
+        "whatYouDo": "Dites ce qui vous met à l'aise. Apportez vos questions."
+      },
+      {
+        "title": "Vos options",
+        "whatHappens": "Je fais les recherches et les comparaisons, puis je prépare un résumé en langage courant.",
+        "whatYouDo": "Lisez-le à votre rythme et notez vos questions."
+      },
+      {
+        "title": "Votre décision",
+        "whatHappens": "Nous le revoyons ensemble. J'explique honnêtement les risques et les coûts.",
+        "whatYouDo": "Décidez, ou prenez plus de temps. Je n'impose aucun délai."
+      },
+      {
+        "title": "Suivi continu",
+        "whatHappens": "Je reste en contact et je vous rappelle les dates importantes, comme les renouvellements.",
+        "whatYouDo": "Dites-moi quand votre vie change."
+      }
+    ]
+  },
+  "about": {
+    "title": "À propos",
+    "description": "Un courtier qui explique avant de vous demander de décider.",
+    "brokerHeading": "Faites connaissance avec votre courtier",
+    "brokerName": "[TODO: nom complet et titre du courtier]",
+    "bio": [
+      "[TODO: biographie du courtier, 2 à 3 courts paragraphes : parcours, années de pratique, pourquoi ce travail]"
+    ],
+    "photoPlaceholder": "[TODO: photo professionnelle du courtier]",
+    "approachHeading": "Ma façon de travailler",
+    "approach": [
+      {
+        "title": "Traduire d'abord",
+        "description": "Chaque option est expliquée en langage courant avant toute recommandation."
+      },
+      {
+        "title": "Comparer honnêtement",
+        "description": "Vous voyez le coût réel et les compromis de chaque choix, y compris ceux qui me rapportent moins."
+      },
+      {
+        "title": "À votre rythme",
+        "description": "Je n'impose aucun délai. Vous décidez quand vous êtes prêt."
+      }
+    ],
+    "credentialsHeading": "Permis et réglementation",
+    "credentials": "[TODO: lister chaque permis détenu, son numéro et l'organisme de réglementation (par exemple l'AMF ou l'OACIQ), une fois confirmés]",
+    "languagesHeading": "Langues et lieu",
+    "languages": "Les services sont offerts en français et en anglais, à Montréal (Québec) et par appel vidéo. [TODO: confirmer le territoire desservi]",
+    "cta": "Réserver une consultation gratuite"
+  },
+  "fees": {
+    "title": "Frais et transparence",
+    "description": "Vous devriez toujours savoir ce que coûte un service et comment je suis rémunéré avant de vous engager.",
+    "firstMeeting": "Votre première consultation est gratuite et sans engagement.",
+    "howPaidHeading": "Comment je suis rémunéré",
+    "howPaid": "[TODO: explication honnête et conforme de la rémunération pour chaque service, y compris si des prêteurs, assureurs ou fournisseurs de produits versent une commission et si des frais vous sont facturés directement]",
+    "servicesHeading": "Ce que chaque service vous coûte",
+    "services": [
+      {
+        "name": "Hypothèques et financement",
+        "cost": "[TODO: coût pour le client et mode de rémunération du courtier]"
+      },
+      {
+        "name": "Épargne et placements",
+        "cost": "[TODO: coût pour le client et mode de rémunération du courtier]"
+      },
+      {
+        "name": "Santé du crédit",
+        "cost": "[TODO: coût pour le client et mode de rémunération du courtier]"
+      },
+      {
+        "name": "Planification de la protection",
+        "cost": "[TODO: coût pour le client et mode de rémunération du courtier]"
+      }
+    ],
+    "conflictsHeading": "Conflits d'intérêts",
+    "conflicts": "[TODO: décrire toute situation où la rémunération du courtier pourrait influencer une recommandation et comment elle est gérée]",
+    "cta": "Posez-moi vos questions avant de décider"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "question": "Dois-je connaître la finance avant de vous rencontrer?",
+        "answer": "Non. La plupart de mes clients savent très peu de choses au départ. J'explique tout en langage courant."
+      },
+      {
+        "question": "Combien coûte la première rencontre?",
+        "answer": "Rien. La première consultation est gratuite et sans engagement."
+      },
+      {
+        "question": "Comment êtes-vous rémunéré?",
+        "answer": "[TODO: explication honnête et conforme — voir Frais et transparence]"
+      },
+      {
+        "question": "Allez-vous me presser de décider?",
+        "answer": "Jamais. Vous choisissez le moment. Si une option ne vous convient pas, je vous le dirai."
+      },
+      {
+        "question": "Mes renseignements personnels sont-ils en sécurité?",
+        "answer": "Oui. Je ne recueille que le nécessaire, je ne le communique qu'avec votre consentement et je le protège conformément à la loi québécoise sur la protection des renseignements personnels. [TODO: ajouter le lien vers la politique de confidentialité une fois publiée]"
+      },
+      {
+        "question": "Peut-on se rencontrer en ligne?",
+        "answer": "Oui. Je rencontre mes clients en personne à [TODO: lieu] et par appel vidéo."
+      },
+      {
+        "question": "Parlez-vous français?",
+        "answer": "Oui. Les services sont offerts en français et en anglais."
+      },
+      {
+        "question": "Et si j'ai un mauvais dossier de crédit?",
+        "answer": "Vous êtes le bienvenu. Nous l'examinerons ensemble et planifierons la suite."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Prendre rendez-vous",
+    "description": "Dites-moi brièvement ce que vous avez en tête. Votre première consultation est gratuite et sans engagement, et je vous répondrai personnellement en un jour ouvrable.",
+    "form": {
+      "nameLabel": "Nom complet",
+      "namePlaceholder": "Votre nom complet",
+      "emailLabel": "Adresse courriel",
+      "emailPlaceholder": "votre.courriel@exemple.com",
+      "phoneLabel": "Téléphone (facultatif)",
+      "phonePlaceholder": "514-555-0123",
+      "topicLabel": "De quoi avez-vous besoin?",
+      "topicPlaceholder": "Choisissez une option",
+      "topics": {
+        "mortgages": "Hypothèques et financement",
+        "savingsInvesting": "Épargne et placements",
+        "creditHealth": "Santé du crédit",
+        "protection": "Planification de la protection",
+        "notSure": "Je ne sais pas encore"
+      },
+      "messageLabel": "Message",
+      "messagePlaceholder": "Parlez-moi brièvement de votre situation",
+      "consentLabel": "J'accepte d'être contacté au sujet de ma demande et j'ai lu la",
+      "privacyLinkLabel": "Politique de confidentialité",
+      "sendLabel": "Envoyer ma demande",
+      "sendingLabel": "Envoi en cours...",
+      "successMessage": "Merci, {firstName}. J'ai bien reçu votre demande et je vous répondrai personnellement en un jour ouvrable.",
+      "errorMessage": "Une erreur s'est produite. Veuillez réessayer.",
+      "errors": {
+        "nameTooShort": "Veuillez entrer votre nom complet.",
+        "nameTooLong": "Le nom est trop long.",
+        "emailInvalid": "Veuillez entrer une adresse courriel valide.",
+        "phoneInvalid": "Veuillez entrer un numéro de téléphone valide.",
+        "topicRequired": "Veuillez choisir un sujet.",
+        "messageTooShort": "Veuillez écrire au moins 10 caractères.",
+        "messageTooLong": "Le message est trop long.",
+        "consentRequired": "Votre consentement est nécessaire pour que je puisse vous répondre."
+      }
+    },
+    "calendarTitle": "Ou réservez directement un moment"
+  },
+  "cookies": {
+    "title": "Nous respectons votre vie privée",
+    "description": "Avec votre permission, nous utilisons Google Analytics, un service tiers, pour comprendre comment le site est utilisé. Rien n'est chargé tant que vous n'acceptez pas. Vous pouvez refuser et le site fonctionne de la même façon.",
+    "acceptLabel": "Accepter tout",
+    "rejectLabel": "Refuser",
+    "learnMore": "Lire la politique de confidentialité"
+  },
+  "learning": {
+    "title": "Centre d'apprentissage",
+    "description": "La finance, traduite — des guides en langage courant sur les hypothèques, les placements, le crédit et la protection.",
+    "glossaryTitle": "Glossaire",
+    "glossaryDescription": "Les termes financiers essentiels expliqués en langage courant.",
+    "articlesTitle": "Articles",
+    "articlesDescription": "Guides approfondis sur les hypothèques, les placements, le crédit et la protection.",
+    "readMore": "Lire la suite",
+    "backToLearning": "Retour au Centre d'apprentissage",
+    "noArticles": "Aucun article disponible pour le moment."
+  },
+  "footer": {
+    "tagline": "Les finances, en toute clarté.",
+    "navHeading": "Explorer",
+    "legalHeading": "Mentions légales",
+    "copyright": "© 2026 Barter Force. Tous droits réservés.",
+    "links": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "fees": "Frais et transparence",
+      "contact": "Contact"
+    },
+    "licenceLine": "[TODO: nom du courtier, numéro de permis et organisme de réglementation]",
+    "disclaimer": "L'information présentée sur ce site est générale et éducative et ne constitue pas un conseil financier personnalisé. [TODO: confirmer la formulation de l'avis selon le plan directeur et les exigences de l'organisme de réglementation]"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "description": "Comment vos renseignements personnels sont recueillis, utilisés et protégés.",
+    "draftNotice": "[TODO: cette politique est une ébauche. La faire réviser par un avocat pour assurer la conformité à la Loi sur la protection des renseignements personnels dans le secteur privé du Québec (Loi 25) avant le lancement.]",
+    "lastUpdated": "Dernière mise à jour : [TODO: date]",
+    "sections": [
+      {
+        "heading": "Qui est responsable",
+        "paragraphs": [
+          "Barter Force est responsable des renseignements personnels recueillis par ce site Web.",
+          "La personne responsable de la protection des renseignements personnels est [TODO: nom et titre]. Vous pouvez la joindre à [TODO: adresse courriel] ou à [TODO: adresse postale]."
+        ]
+      },
+      {
+        "heading": "Ce que nous recueillons",
+        "paragraphs": [
+          "Lorsque vous utilisez le formulaire de contact, nous recueillons votre nom, votre adresse courriel, votre numéro de téléphone (facultatif), le sujet choisi et votre message.",
+          "Si vous acceptez les témoins d'analyse, nous recueillons aussi des renseignements anonymes sur votre utilisation du site, comme les pages consultées.",
+          "Lors d'une consultation, vous pouvez choisir de partager des renseignements financiers. [TODO: lister précisément ce qui est recueilli et consigné pendant les consultations]"
+        ]
+      },
+      {
+        "heading": "Pourquoi nous les recueillons",
+        "paragraphs": [
+          "Pour répondre à votre demande et fournir les services que vous demandez.",
+          "Pour respecter les obligations légales et réglementaires applicables aux services financiers.",
+          "Pour comprendre l'utilisation du site et l'améliorer, seulement si vous acceptez les témoins d'analyse."
+        ]
+      },
+      {
+        "heading": "Avec qui nous les partageons",
+        "paragraphs": [
+          "Nous ne vendons jamais vos renseignements personnels. Nous ne les partageons qu'avec votre consentement, ou avec des fournisseurs qui nous aident à exploiter le site, selon leurs propres engagements de confidentialité.",
+          "Fournisseurs actuellement utilisés : envoi de courriels (Resend), prise de rendez-vous [TODO: Calendly ou Cal.com, le cas échéant] et analyse (Google Analytics, seulement si vous acceptez les témoins d'analyse). [TODO: confirmer la liste finale des fournisseurs]",
+          "Les prêteurs, assureurs et autres institutions ne reçoivent vos renseignements que lorsque vous me demandez d'agir auprès d'eux."
+        ]
+      },
+      {
+        "heading": "Conservation à l'extérieur du Québec",
+        "paragraphs": [
+          "Certains fournisseurs peuvent conserver ou traiter des renseignements à l'extérieur du Québec. [TODO: confirmer l'emplacement des fournisseurs et réaliser l'évaluation des facteurs relatifs à la vie privée exigée par la Loi 25 avant tout transfert de renseignements personnels hors Québec]"
+        ]
+      },
+      {
+        "heading": "Durée de conservation",
+        "paragraphs": [
+          "[TODO: indiquer la durée de conservation des messages du formulaire, des dossiers clients et des données d'analyse, ainsi que la façon dont les renseignements sont détruits ou anonymisés]"
+        ]
+      },
+      {
+        "heading": "Vos droits",
+        "paragraphs": [
+          "Vous pouvez demander à consulter les renseignements personnels que nous détenons à votre sujet, à les faire corriger, à retirer votre consentement, ou à ce que nous cessions de les utiliser ou les supprimions, sous réserve des obligations légales de conservation.",
+          "Pour exercer ces droits, communiquez avec la personne responsable ci-dessus. Nous répondrons dans un délai de 30 jours.",
+          "Si vous n'êtes pas satisfait, vous pouvez déposer une plainte auprès de la Commission d'accès à l'information du Québec."
+        ]
+      },
+      {
+        "heading": "Témoins et analyse",
+        "paragraphs": [
+          "Les témoins d'analyse sont désactivés tant que vous ne les acceptez pas dans la bannière. Vous pouvez les refuser, et le site fonctionne de la même façon. [TODO: expliquer comment un visiteur peut modifier son choix plus tard]"
+        ]
+      },
+      {
+        "heading": "Modifications de la politique",
+        "paragraphs": [
+          "Nous mettrons cette page à jour lorsque nos pratiques changeront et indiquerons la date de la dernière mise à jour en haut de la page."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "description": "Les règles d'utilisation de ce site Web.",
+    "draftNotice": "[TODO: ces conditions sont une ébauche. Les faire réviser par un avocat avant le lancement.]",
+    "lastUpdated": "Dernière mise à jour : [TODO: date]",
+    "sections": [
+      {
+        "heading": "Utilisation du site",
+        "paragraphs": [
+          "En utilisant ce site Web, vous acceptez ces conditions. Si vous n'êtes pas d'accord, veuillez ne pas utiliser le site."
+        ]
+      },
+      {
+        "heading": "Information générale seulement",
+        "paragraphs": [
+          "Le contenu de ce site est général et éducatif. Il ne constitue pas un conseil financier, fiscal, juridique ou d'assurance personnalisé, et sa lecture ne crée pas de relation client.",
+          "Une relation client ne commence que lorsque nous convenons d'un service par écrit. [TODO: confirmer la formulation selon les exigences de l'organisme de réglementation]"
+        ]
+      },
+      {
+        "heading": "Aucune garantie",
+        "paragraphs": [
+          "Les placements comportent des risques et les résultats passés ne garantissent pas les rendements futurs. Les exemples du glossaire et des articles sont donnés à titre d'illustration et utilisent des chiffres simplifiés."
+        ]
+      },
+      {
+        "heading": "Liens vers d'autres sites",
+        "paragraphs": [
+          "Ce site peut contenir des liens vers d'autres sites Web. Nous ne sommes pas responsables de leur contenu ni de leurs pratiques."
+        ]
+      },
+      {
+        "heading": "Propriété intellectuelle",
+        "paragraphs": [
+          "Les textes, le design et le logo de ce site appartiennent à Barter Force. Vous ne pouvez pas les reproduire sans autorisation écrite."
+        ]
+      },
+      {
+        "heading": "Limitation de responsabilité",
+        "paragraphs": [
+          "[TODO: formulation de limitation de responsabilité approuvée par un avocat]"
+        ]
+      },
+      {
+        "heading": "Droit applicable",
+        "paragraphs": [
+          "Ces conditions sont régies par les lois du Québec et les lois fédérales du Canada qui s'y appliquent. [TODO: confirmer la juridiction et la formulation relative aux différends avec un avocat]"
+        ]
+      },
+      {
+        "heading": "Modifications",
+        "paragraphs": [
+          "Nous pouvons mettre à jour ces conditions. La date de la dernière mise à jour est indiquée en haut de cette page."
+        ]
+      }
+    ]
+  }
+}

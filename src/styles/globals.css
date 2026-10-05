@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessibility: Focus visible styles */
+:focus-visible {
+  outline: 2px solid #D4A574;
+  outline-offset: 2px;
+}
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #D4A574;
+  color: #2C2C2C;
+  padding: 8px;
+  z-index: 100;
+  font-weight: bold;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}

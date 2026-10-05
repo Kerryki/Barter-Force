@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npm test
+      - run: npm run build
+
+  # Launch gate: blocks production deploys while [TODO] placeholders, unconfirmed
+  # broker facts, EN/FR key drift or incomplete articles remain. Pull requests
+  # only see a report; pushes to main must pass.
+  launch-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Content check (report only on pull requests)
+        run: npm run content-check
+        continue-on-error: ${{ github.event_name == 'pull_request' }}

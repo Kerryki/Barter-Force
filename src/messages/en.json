@@ -1,0 +1,538 @@
+{
+  "common": {
+    "logo": "Barter Force",
+    "tagline": "Money matters, made clear.",
+    "skipToContent": "Skip to main content"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "howItWorks": "How it works",
+    "about": "About",
+    "learning": "Learning centre",
+    "contact": "Contact",
+    "bookConsultation": "Book a consultation",
+    "menu": "Menu"
+  },
+  "hero": {
+    "headline": "Money matters, made clear.",
+    "subheadline": "Private financial guidance for people who have never felt at home with finance. No jargon. No pressure. Just a trusted broker who explains every option before you decide.",
+    "primaryCta": "Book a free consultation",
+    "secondaryCta": "See how I can help"
+  },
+  "intro": {
+    "title": "You do not need to understand finance to do well in it.",
+    "paragraph1": "Most people are never taught how money works. They are handed forms, percentages and acronyms, and told to sign. That is not guidance.",
+    "paragraph2": "As your broker, my job is to translate. I look at your situation, lay out your choices in everyday language, and compare the real costs of each, so the decision you make is one you actually understand."
+  },
+  "homeServices": {
+    "title": "Where I can help"
+  },
+  "processStrip": {
+    "title": "How we will work together",
+    "steps": [
+      {
+        "title": "We talk",
+        "description": "A free conversation about where you are and where you want to be."
+      },
+      {
+        "title": "I do the comparing",
+        "description": "I prepare a clear summary of costs, benefits and trade-offs."
+      },
+      {
+        "title": "You decide",
+        "description": "We review the plan together and you choose at your own pace."
+      }
+    ]
+  },
+  "promise": {
+    "title": "My promise to you",
+    "items": [
+      "Plain language, always. If a word needs a dictionary, I explain it first.",
+      "Your interests come first. I will tell you when an option is not right for you, even if it is the easier sale.",
+      "Full transparency on costs. You know what each option costs and how I am paid before you commit.",
+      "Discretion. Your financial information stays private and is shared only with your consent."
+    ]
+  },
+  "testimonials": [],
+  "finalCta": {
+    "title": "Begin with a conversation.",
+    "description": "Your first consultation is free and without obligation. Tell me what you have in mind and I will reply personally within one business day.",
+    "button": "Book a free consultation"
+  },
+  "glossary": {
+    "title": "Finance, translated"
+  },
+  "services": {
+    "title": "Services",
+    "description": "Four areas, one approach: clear explanations, honest comparisons and your decision, always.",
+    "learnMore": "Learn more →",
+    "licenceNotice": "[TODO: the services shown below are drafts. Confirm which services are covered by the broker's licence before launch, and remove any that are not authorised.]",
+    "labels": {
+      "whoFor": "Who it is for",
+      "whatWeDo": "What we will do together",
+      "whatYouReceive": "What you will receive",
+      "commonQuestions": "Common questions"
+    },
+    "cards": [
+      {
+        "title": "Mortgages and financing",
+        "description": "Buying, renewing or refinancing, with lenders compared for you."
+      },
+      {
+        "title": "Savings and investing",
+        "description": "The right accounts and a plan that fits your goals and comfort with risk."
+      },
+      {
+        "title": "Credit health",
+        "description": "Understand your profile and follow a clear path to strengthen it."
+      },
+      {
+        "title": "Protection planning",
+        "description": "Make sure your income, family and property are covered without overpaying."
+      }
+    ],
+    "items": {
+      "mortgages": {
+        "headline": "Your home, without the confusion.",
+        "whoFor": "First-time buyers, owners approaching renewal, and anyone considering a refinance.",
+        "intro": "A mortgage is likely the biggest commitment you will ever sign. I make sure you understand what you are agreeing to before you agree to it.",
+        "whatWeDo": [
+          "Review your income, savings and goals to find a comfortable budget.",
+          "Explain the key choices in plain terms: fixed or variable, the length of your term, and how long you take to repay.",
+          "Compare offers from [TODO: number] lenders and show you the true cost of each, including penalties for leaving early.",
+          "Support you through pre-approval, the offer and the signing."
+        ],
+        "whatYouReceive": [
+          "A one-page comparison of your best options.",
+          "A clear explanation of every number on your offer.",
+          "A reminder before your renewal so you never auto-renew by default."
+        ],
+        "commonQuestions": [
+          {
+            "question": "What is the difference between a term and an amortization?",
+            "answer": "The term is how long your rate contract lasts. The amortization is the total time to repay the loan."
+          },
+          {
+            "question": "Will asking for a pre-approval hurt my credit?",
+            "answer": "[TODO: insert accurate explanation confirmed with your lenders]"
+          },
+          {
+            "question": "Do I pay you for this service?",
+            "answer": "[TODO: state how you are compensated — see Fees and transparency]"
+          }
+        ],
+        "cta": "Talk about my mortgage"
+      },
+      "savingsInvesting": {
+        "headline": "Put your money to work, at your own pace.",
+        "whoFor": "First-time investors and savers who feel unsure where to begin.",
+        "intro": "You do not need a large sum or a finance degree to start. We begin with your goals, then choose the simplest accounts and products that suit them.",
+        "whatWeDo": [
+          "Clarify your goals: an emergency fund, a home, retirement, or a child's education.",
+          "Introduce the main accounts in plain language, such as the TFSA and RRSP, and explain how each is taxed.",
+          "Discuss your comfort with ups and downs so the plan is one you can stick to.",
+          "Set up a plan and a simple review schedule."
+        ],
+        "whatYouReceive": [
+          "A written plan in everyday language.",
+          "An explanation of every product and its fees before you buy.",
+          "Regular check-ins [TODO: confirm frequency]."
+        ],
+        "commonQuestions": [
+          {
+            "question": "How much do I need to start?",
+            "answer": "[TODO: insert your real minimums]"
+          },
+          {
+            "question": "Can I lose money?",
+            "answer": "Yes. Investments carry risk and returns are never guaranteed. I will explain the risk of each option before you decide."
+          },
+          {
+            "question": "What is diversification?",
+            "answer": "Spreading your money across different investments so one poor result does not undo your whole plan."
+          }
+        ],
+        "cta": "Start with a conversation"
+      },
+      "creditHealth": {
+        "headline": "A clear path to a stronger credit profile.",
+        "whoFor": "People starting out, newcomers building a history, or anyone rebuilding after a difficult period.",
+        "intro": "Your credit history is a record, not a verdict. We look at it together, without judgement, and decide on steps that make a real difference.",
+        "whatWeDo": [
+          "Review your credit report together and explain each section.",
+          "Identify what is helping and what is holding your profile back.",
+          "Build a step-by-step plan with realistic timelines.",
+          "Prepare you for future borrowing, such as a mortgage or a vehicle loan."
+        ],
+        "whatYouReceive": [
+          "A personal credit action plan.",
+          "Guidance on habits that strengthen your profile.",
+          "No promises of overnight results, because there are none."
+        ],
+        "commonQuestions": [
+          {
+            "question": "Can you remove accurate negative items?",
+            "answer": "No. Be careful of anyone who promises this. [TODO: confirm wording with your regulator or lawyer]"
+          },
+          {
+            "question": "How long does rebuilding take?",
+            "answer": "It depends on your history. I will give you an honest estimate after reviewing your report."
+          }
+        ],
+        "cta": "Review my credit path"
+      },
+      "protection": {
+        "headline": "Peace of mind for the people and things you care about.",
+        "whoFor": "Families, homeowners and self-employed people.",
+        "intro": "Protection is about answering one question: what would happen if life changed suddenly? We look at that calmly and cover only what you actually need.",
+        "whatWeDo": [
+          "List what you want to protect: income, family, home, business.",
+          "Show where the gaps are, in plain terms.",
+          "Compare coverage from [TODO: insurers or partners] and explain exclusions and costs.",
+          "Review annually as your life changes."
+        ],
+        "whatYouReceive": [
+          "A simple needs summary.",
+          "A side-by-side comparison with no fine-print surprises."
+        ],
+        "commonQuestions": [
+          {
+            "question": "Am I being sold more than I need?",
+            "answer": "My role is to recommend only what fits. If you are already covered, I will tell you."
+          },
+          {
+            "question": "What does it cost?",
+            "answer": "[TODO: explain how pricing is shown and compensation disclosed]"
+          }
+        ],
+        "cta": "Review my protection"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "A calm, simple process.",
+    "stepLabels": {
+      "whatHappens": "What happens",
+      "whatYouDo": "What you do"
+    },
+    "steps": [
+      {
+        "title": "Free conversation",
+        "whatHappens": "A 30 to 45 minute call or meeting [TODO: confirm length]. I listen and ask about your goals.",
+        "whatYouDo": "Share what you are comfortable with. Bring any questions."
+      },
+      {
+        "title": "Your options",
+        "whatHappens": "I research and compare, then prepare a plain-language summary.",
+        "whatYouDo": "Read it at your own pace and note questions."
+      },
+      {
+        "title": "Your decision",
+        "whatHappens": "We review together. I explain risks and costs honestly.",
+        "whatYouDo": "Decide, or take more time. There is no deadline from me."
+      },
+      {
+        "title": "Ongoing care",
+        "whatHappens": "I stay in touch and remind you of key dates such as renewals.",
+        "whatYouDo": "Tell me when your life changes."
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "description": "A broker who explains before asking you to decide.",
+    "brokerHeading": "Meet your broker",
+    "brokerName": "[TODO: broker full name and title]",
+    "bio": [
+      "[TODO: broker biography, 2 to 3 short paragraphs: background, years in practice, why this work]"
+    ],
+    "photoPlaceholder": "[TODO: professional photo of the broker]",
+    "approachHeading": "How I work",
+    "approach": [
+      {
+        "title": "Translate first",
+        "description": "Every option is explained in everyday language before any recommendation is made."
+      },
+      {
+        "title": "Compare honestly",
+        "description": "You see the real cost and the trade-offs of each choice, including the ones that earn me less."
+      },
+      {
+        "title": "Your pace",
+        "description": "There is no deadline from me. You decide when you are ready."
+      }
+    ],
+    "credentialsHeading": "Licences and regulation",
+    "credentials": "[TODO: list each licence held, the licence number and the regulator (for example the AMF or the OACIQ), once confirmed]",
+    "languagesHeading": "Languages and location",
+    "languages": "Services are offered in French and English, in Montréal, Québec and by video call. [TODO: confirm service area]",
+    "cta": "Book a free consultation"
+  },
+  "fees": {
+    "title": "Fees and transparency",
+    "description": "You should always know what a service costs and how I am paid before you commit.",
+    "firstMeeting": "Your first consultation is free and without obligation.",
+    "howPaidHeading": "How I am paid",
+    "howPaid": "[TODO: honest, compliant explanation of compensation for each service, including whether lenders, insurers or product providers pay a commission and whether any fee is charged to you directly]",
+    "servicesHeading": "What each service costs you",
+    "services": [
+      {
+        "name": "Mortgages and financing",
+        "cost": "[TODO: cost to client and how the broker is compensated]"
+      },
+      {
+        "name": "Savings and investing",
+        "cost": "[TODO: cost to client and how the broker is compensated]"
+      },
+      {
+        "name": "Credit health",
+        "cost": "[TODO: cost to client and how the broker is compensated]"
+      },
+      {
+        "name": "Protection planning",
+        "cost": "[TODO: cost to client and how the broker is compensated]"
+      }
+    ],
+    "conflictsHeading": "Conflicts of interest",
+    "conflicts": "[TODO: describe any situation where the broker's compensation could influence a recommendation, and how it is managed]",
+    "cta": "Ask me anything before you decide"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Do I need to know anything about finance before meeting you?",
+        "answer": "No. Most clients start knowing very little. I explain everything in plain language."
+      },
+      {
+        "question": "How much does the first meeting cost?",
+        "answer": "Nothing. The first consultation is free and without obligation."
+      },
+      {
+        "question": "How are you paid?",
+        "answer": "[TODO: honest, compliant explanation — see Fees and transparency]"
+      },
+      {
+        "question": "Will you pressure me to decide?",
+        "answer": "Never. You choose the timing. If an option is not right for you, I will say so."
+      },
+      {
+        "question": "Is my personal information safe?",
+        "answer": "Yes. I collect only what is needed, share it only with your consent, and protect it according to Québec privacy law. [TODO: link to privacy policy once published]"
+      },
+      {
+        "question": "Can we meet online?",
+        "answer": "Yes. I meet clients in person in [TODO: location] and by video call."
+      },
+      {
+        "question": "Do you speak French?",
+        "answer": "Yes. Services are available in French and English."
+      },
+      {
+        "question": "What if I have a poor credit history?",
+        "answer": "You are welcome here. We will look at it together and plan a path forward."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Book a consultation",
+    "description": "Tell me a little about what you have in mind. Your first consultation is free and without obligation, and I will reply personally within one business day.",
+    "form": {
+      "nameLabel": "Full name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "your.email@example.com",
+      "phoneLabel": "Phone (optional)",
+      "phonePlaceholder": "514-555-0123",
+      "topicLabel": "What do you need help with?",
+      "topicPlaceholder": "Choose one",
+      "topics": {
+        "mortgages": "Mortgages and financing",
+        "savingsInvesting": "Savings and investing",
+        "creditHealth": "Credit health",
+        "protection": "Protection planning",
+        "notSure": "I am not sure yet"
+      },
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me a little about your situation",
+      "consentLabel": "I agree to be contacted about my request and I have read the",
+      "privacyLinkLabel": "Privacy Policy",
+      "sendLabel": "Send my request",
+      "sendingLabel": "Sending...",
+      "successMessage": "Thank you, {firstName}. I have received your request and will reply personally within one business day.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "errors": {
+        "nameTooShort": "Please enter your full name.",
+        "nameTooLong": "Name is too long.",
+        "emailInvalid": "Please enter a valid email address.",
+        "phoneInvalid": "Please enter a valid phone number.",
+        "topicRequired": "Please choose a topic.",
+        "messageTooShort": "Please write at least 10 characters.",
+        "messageTooLong": "Message is too long.",
+        "consentRequired": "Your consent is required so I can reply to you."
+      }
+    },
+    "calendarTitle": "Or book a time directly"
+  },
+  "cookies": {
+    "title": "We respect your privacy",
+    "description": "With your permission, we use Google Analytics, a third-party service, to understand how the site is used. Nothing is loaded until you accept. You can refuse and the site works the same way.",
+    "acceptLabel": "Accept All",
+    "rejectLabel": "Reject",
+    "learnMore": "Read the Privacy Policy"
+  },
+  "learning": {
+    "title": "Learning Centre",
+    "description": "Finance, translated — plain-language guides to mortgages, investing, credit and protection.",
+    "glossaryTitle": "Glossary",
+    "glossaryDescription": "Essential finance terms explained in plain language.",
+    "articlesTitle": "Articles",
+    "articlesDescription": "In-depth guides on mortgages, investing, credit and protection.",
+    "readMore": "Read more",
+    "backToLearning": "Back to Learning Centre",
+    "noArticles": "No articles available yet."
+  },
+  "footer": {
+    "tagline": "Money matters, made clear.",
+    "navHeading": "Explore",
+    "legalHeading": "Legal",
+    "copyright": "© 2026 Barter Force. All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "fees": "Fees and transparency",
+      "contact": "Contact"
+    },
+    "licenceLine": "[TODO: broker name, licence number and regulator]",
+    "disclaimer": "The information on this site is general and educational and is not personalised financial advice. [TODO: confirm the disclaimer wording from the blueprint and regulator requirements]"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "How your personal information is collected, used and protected.",
+    "draftNotice": "[TODO: this policy is a draft. Have it reviewed by a lawyer for compliance with Québec's Act respecting the protection of personal information in the private sector (Law 25) before launch.]",
+    "lastUpdated": "Last updated: [TODO: date]",
+    "sections": [
+      {
+        "heading": "Who is responsible",
+        "paragraphs": [
+          "Barter Force is responsible for the personal information collected through this website.",
+          "The person responsible for the protection of personal information is [TODO: name and title]. You can reach them at [TODO: email address] or [TODO: postal address]."
+        ]
+      },
+      {
+        "heading": "What we collect",
+        "paragraphs": [
+          "When you use the contact form, we collect your name, email address, phone number (optional), the topic you choose and your message.",
+          "If you accept analytics cookies, we also collect anonymous information about how you use the site, such as the pages you visit.",
+          "During a consultation, you may choose to share financial information. [TODO: list exactly what is collected and recorded during consultations]"
+        ]
+      },
+      {
+        "heading": "Why we collect it",
+        "paragraphs": [
+          "To reply to your request and to provide the services you ask for.",
+          "To meet legal and regulatory obligations that apply to financial services.",
+          "To understand how the site is used and improve it, only if you accept analytics cookies."
+        ]
+      },
+      {
+        "heading": "Who we share it with",
+        "paragraphs": [
+          "We never sell your personal information. We share it only with your consent, or with service providers who help us run the site, under their own privacy commitments.",
+          "Providers currently used: email delivery (Resend), appointment scheduling [TODO: Calendly or Cal.com, if used] and analytics (Google Analytics, only if you accept analytics cookies). [TODO: confirm the final list of providers]",
+          "Lenders, insurers or other institutions receive your information only when you ask me to act with them."
+        ]
+      },
+      {
+        "heading": "Storage outside Québec",
+        "paragraphs": [
+          "Some providers may store or process information outside Québec. [TODO: confirm provider locations and complete the privacy impact assessment required by Law 25 before transferring personal information outside Québec]"
+        ]
+      },
+      {
+        "heading": "How long we keep it",
+        "paragraphs": [
+          "[TODO: state retention period for contact form messages, client files and analytics data, and how information is destroyed or anonymised]"
+        ]
+      },
+      {
+        "heading": "Your rights",
+        "paragraphs": [
+          "You may ask to see the personal information we hold about you, have it corrected, withdraw your consent, or ask us to stop using it or delete it, subject to legal retention duties.",
+          "To exercise these rights, contact the person responsible above. We will answer within 30 days.",
+          "If you are not satisfied, you may file a complaint with the Commission d'accès à l'information du Québec."
+        ]
+      },
+      {
+        "heading": "Cookies and analytics",
+        "paragraphs": [
+          "Analytics cookies are off until you accept them in the banner. You can refuse, and the site works the same way. [TODO: explain how a visitor can change their choice later]"
+        ]
+      },
+      {
+        "heading": "Changes to this policy",
+        "paragraphs": [
+          "We will update this page when our practices change and show the date of the latest update at the top."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "description": "The rules for using this website.",
+    "draftNotice": "[TODO: these terms are a draft. Have them reviewed by a lawyer before launch.]",
+    "lastUpdated": "Last updated: [TODO: date]",
+    "sections": [
+      {
+        "heading": "Using this site",
+        "paragraphs": [
+          "By using this website you accept these terms. If you do not agree, please do not use the site."
+        ]
+      },
+      {
+        "heading": "General information only",
+        "paragraphs": [
+          "The content of this site is general and educational. It is not personalised financial, tax, legal or insurance advice, and reading it does not create a client relationship.",
+          "A client relationship begins only when we agree on a service in writing. [TODO: confirm wording with the regulator's requirements]"
+        ]
+      },
+      {
+        "heading": "No guarantees",
+        "paragraphs": [
+          "Investments carry risk, and past results do not guarantee future returns. Examples in the glossary and articles are for illustration only and use simplified figures."
+        ]
+      },
+      {
+        "heading": "Links to other sites",
+        "paragraphs": [
+          "This site may link to other websites. We are not responsible for their content or practices."
+        ]
+      },
+      {
+        "heading": "Intellectual property",
+        "paragraphs": [
+          "The text, design and logo of this site belong to Barter Force. You may not copy them without written permission."
+        ]
+      },
+      {
+        "heading": "Limitation of liability",
+        "paragraphs": [
+          "[TODO: lawyer-approved limitation of liability wording]"
+        ]
+      },
+      {
+        "heading": "Governing law",
+        "paragraphs": [
+          "These terms are governed by the laws of Québec and the federal laws of Canada that apply there. [TODO: confirm jurisdiction and dispute wording with a lawyer]"
+        ]
+      },
+      {
+        "heading": "Changes",
+        "paragraphs": [
+          "We may update these terms. The date of the latest update is shown at the top of this page."
+        ]
+      }
+    ]
+  }
+}
