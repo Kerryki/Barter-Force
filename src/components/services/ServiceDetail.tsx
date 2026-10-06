@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/Section';
-import { GoldDivider } from '@/components/ui/GoldDivider';
 import { Button } from '@/components/ui/Button';
 import { LicenceNotice } from '@/components/services/LicenceNotice';
 
@@ -17,36 +16,13 @@ interface Faq {
 function BulletColumn({ heading, items }: { heading: string; items: string[] }) {
   return (
     <div>
-      <h2 className="text-3xl font-serif font-bold mb-6">{heading}</h2>
-      <ul className="space-y-3 font-sans list-disc pl-5">
+      <h2 style={{ fontSize: '2rem', marginBottom: 20 }}>{heading}</h2>
+      <ul className="plain">
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
       </ul>
     </div>
-  );
-}
-
-function FaqSection({ faqs, label, cta, locale }: { faqs: Faq[]; label: string; cta: string; locale: string }) {
-  return (
-    <Section className="bg-warm-white">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-serif font-bold text-charcoal mb-8">{label}</h2>
-        <dl className="space-y-6">
-          {faqs.map((faq) => (
-            <div key={faq.question}>
-              <dt className="font-serif font-bold text-xl text-charcoal mb-2">{faq.question}</dt>
-              <dd className="font-sans text-gray-700">{faq.answer}</dd>
-            </div>
-          ))}
-        </dl>
-        <div className="mt-12">
-          <Button variant="primary" href={`/${locale}/contact`}>
-            {cta}
-          </Button>
-        </div>
-      </div>
-    </Section>
   );
 }
 
@@ -58,28 +34,34 @@ export function ServiceDetail({ serviceKey, locale }: ServiceDetailProps) {
 
   return (
     <>
-      <Section className="bg-warm-white">
-        <div className="max-w-3xl mx-auto">
+      <Section>
+        <div className="narrow">
           <LicenceNotice />
-          <p className="text-lg font-sans text-gray-700 leading-relaxed">{t(`${base}.intro`)}</p>
+          <p style={{ fontSize: '1.15rem' }}>{t(`${base}.intro`)}</p>
         </div>
       </Section>
 
-      <GoldDivider />
-
-      <Section className="bg-charcoal text-warm-white">
-        <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-12">
-          <BulletColumn heading={t('labels.whatWeDo')} items={t.raw(`${base}.whatWeDo`) as string[]} />
-          <BulletColumn
-            heading={t('labels.whatYouReceive')}
-            items={t.raw(`${base}.whatYouReceive`) as string[]}
-          />
-        </div>
+      <Section className="band" wrapClassName="two">
+        <BulletColumn heading={t('labels.whatWeDo')} items={t.raw(`${base}.whatWeDo`) as string[]} />
+        <BulletColumn heading={t('labels.whatYouReceive')} items={t.raw(`${base}.whatYouReceive`) as string[]} />
       </Section>
 
-      <GoldDivider />
-
-      <FaqSection faqs={faqs} label={t('labels.commonQuestions')} cta={t(`${base}.cta`)} locale={locale} />
+      <Section>
+        <div className="narrow">
+          <h2>{t('labels.commonQuestions')}</h2>
+          <ul className="plain" style={{ marginTop: 32 }}>
+            {faqs.map((faq) => (
+              <li key={faq.question}>
+                <strong>{faq.question}</strong>
+                {faq.answer}
+              </li>
+            ))}
+          </ul>
+          <div style={{ marginTop: 40 }}>
+            <Button href={`/${locale}#contact`}>{t(`${base}.cta`)}</Button>
+          </div>
+        </div>
+      </Section>
     </>
   );
 }

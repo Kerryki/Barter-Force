@@ -1,55 +1,53 @@
 'use client';
 
 import { useState } from 'react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { glossaryTerms } from '@/content/glossary';
 
 interface GlossaryWidgetProps {
   termIds?: string[];
+  /** `light` is for use on a light section; the hero uses the default dark style. */
+  tone?: 'dark' | 'light';
+  showHeading?: boolean;
 }
 
-export function GlossaryWidget({ termIds }: GlossaryWidgetProps) {
+/** "Finance, translated": tap a term to see a plain-language definition. */
+export function GlossaryWidget({ termIds, tone = 'dark', showHeading = true }: GlossaryWidgetProps) {
   const locale = useLocale();
+  const t = useTranslations('glossary');
   const items = termIds
     ? glossaryTerms.filter((item) => termIds.includes(item.id))
     : glossaryTerms;
   const [activeId, setActiveId] = useState<string>(items[0]?.id ?? '');
   const active = items.find((item) => item.id === activeId) ?? items[0];
+  const french = locale === 'fr';
 
   return (
-    <div>
-      <div className="flex flex-wrap gap-2 mb-4" role="tablist">
-        {items.map((item) => {
-          const isActive = item.id === active?.id;
-          const displayTerm = locale === 'fr' ? item.fr_term : item.term;
-
-          return (
-            <button
-              key={item.id}
-              role="tab"
-              aria-selected={isActive}
-              onClick={() => setActiveId(item.id)}
-              className={`px-4 py-2 rounded-full border-2 text-sm font-sans font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2 ${
-                isActive
-                  ? 'border-gold bg-gold text-charcoal'
-                  : 'border-gray-200 bg-white text-charcoal hover:border-gold'
-              }`}
-            >
-              {displayTerm}
-            </button>
-          );
-        })}
+    <aside className={`translator${tone === 'light' ? ' on-light' : ''}`} aria-label={t('title')}>
+      {showHeading && (
+        <>
+          <h3>{t('title')}</h3>
+          <small>{t('hint')}</small>
+        </>
+      )}
+      <div className="terms" role="group" aria-label={t('title')}>
+        {items.map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            aria-pressed={item.id === active?.id}
+            onClick={() => setActiveId(item.id)}
+          >
+            {french ? item.fr_term : item.term}
+          </button>
+        ))}
       </div>
       {active && (
-        <div role="tabpanel" className="p-4 rounded-lg border-2 border-gold bg-warm-white">
-          <div className="font-serif font-bold text-charcoal mb-2">
-            {locale === 'fr' ? active.fr_term : active.term}
-          </div>
-          <div className="text-sm text-gray-600 font-sans">
-            {locale === 'fr' ? active.fr_definition : active.definition}
-          </div>
+        <div className="answer" aria-live="polite">
+          <strong>{french ? active.fr_term : active.term}</strong>
+          <p>{french ? active.fr_definition : active.definition}</p>
         </div>
       )}
-    </div>
+    </aside>
   );
 }

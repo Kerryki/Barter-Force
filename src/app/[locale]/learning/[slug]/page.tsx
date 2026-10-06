@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Markdown from 'markdown-to-jsx';
 import { Section } from '@/components/layout/Section';
+import { PageTemplate } from '@/components/pages/PageTemplate';
 import { getArticle, getArticlesMetadata } from '@/lib/mdx';
 import { locales } from '@/i18n.config';
 import { pageMetadataFromArticle } from '@/lib/metadata';
@@ -35,38 +36,20 @@ export default async function BlogArticle({ params }: SlugProps) {
   if (!article) notFound();
 
   const { frontmatter, content } = article;
+  const date = new Date(frontmatter.date).toLocaleDateString(locale === 'fr' ? 'fr-CA' : 'en-CA');
 
   return (
-    <>
-      <Section className="bg-charcoal text-warm-white min-h-[300px] flex items-center">
-        <div className="max-w-3xl">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">
-            {frontmatter.title}
-          </h1>
-          <p className="text-gold text-lg">
-            {new Date(frontmatter.date).toLocaleDateString(
-              locale === 'fr' ? 'fr-CA' : 'en-CA'
-            )}
-          </p>
-        </div>
+    <PageTemplate title={frontmatter.title} description={date}>
+      <Section>
+        <article className="prose">
+          <Markdown>{content}</Markdown>
+        </article>
+        <p style={{ marginTop: 48 }}>
+          <Link href={`/${locale}/learning`} style={{ color: 'var(--gold)' }}>
+            ← {t('backToLearning')}
+          </Link>
+        </p>
       </Section>
-
-      <Section className="bg-warm-white">
-        <div className="max-w-3xl mx-auto">
-          <article className="prose prose-lg prose-charcoal max-w-none mb-12 text-charcoal">
-            <Markdown>{content}</Markdown>
-          </article>
-
-          <div className="border-t border-gold/20 pt-8">
-            <Link
-              href={`/${locale}/learning`}
-              className="text-gold-dark hover:underline font-medium transition-colors"
-            >
-              ← {t('backToLearning')}
-            </Link>
-          </div>
-        </div>
-      </Section>
-    </>
+    </PageTemplate>
   );
 }

@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
-import { PageTemplate } from '@/components/pages/PageTemplate';
 import { Section } from '@/components/layout/Section';
+import { PageTemplate } from '@/components/pages/PageTemplate';
 import { pageMetadata } from '@/lib/metadata';
 import type { LocaleProps } from '@/lib/page-props';
 
@@ -18,27 +18,19 @@ export default async function HowItWorks({ params }: LocaleProps) {
 
   return (
     <PageTemplate title={t('title')}>
-      <Section className="bg-warm-white">
-        <ol className="max-w-3xl mx-auto space-y-12">
+      <Section>
+        <div className="steps four" style={{ marginTop: 0 }}>
           {steps.map((step, idx) => (
-            <li key={step.title} className="flex gap-6">
-              <div className="bg-gold text-charcoal rounded-full w-14 h-14 shrink-0 flex items-center justify-center font-serif font-bold text-2xl">
-                {idx + 1}
-              </div>
-              <div>
-                <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">{step.title}</h2>
-                <p className="font-sans text-gray-700 leading-relaxed mb-3">
-                  <span className="font-bold text-charcoal">{t('stepLabels.whatHappens')}: </span>
-                  {step.whatHappens}
-                </p>
-                <p className="font-sans text-gray-700 leading-relaxed">
-                  <span className="font-bold text-charcoal">{t('stepLabels.whatYouDo')}: </span>
-                  {step.whatYouDo}
-                </p>
-              </div>
-            </li>
+            <div key={step.title} className="step">
+              <span className="n">{idx + 1}</span>
+              <h3>{step.title}</h3>
+              <span className="label">{t('stepLabels.whatHappens')}</span>
+              <p>{step.whatHappens}</p>
+              <span className="label">{t('stepLabels.whatYouDo')}</span>
+              <p>{step.whatYouDo}</p>
+            </div>
           ))}
-        </ol>
+        </div>
       </Section>
     </PageTemplate>
   );

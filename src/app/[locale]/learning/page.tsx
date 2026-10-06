@@ -15,44 +15,19 @@ export async function generateMetadata({ params }: LocaleProps): Promise<Metadat
 
 type Translate = Awaited<ReturnType<typeof getTranslations<'learning'>>>;
 
-function ArticleCard({ article, locale, t }: { article: ArticleMetadata; locale: string; t: Translate }) {
+function ArticleList({ locale, t, articles }: { locale: string; t: Translate; articles: ArticleMetadata[] }) {
   const dateLocale = locale === 'fr' ? 'fr-CA' : 'en-CA';
+  if (articles.length === 0) return <p className="sub">{t('noArticles')}</p>;
   return (
-    <article className="bg-charcoal border border-gold/30 rounded-lg p-6 hover:border-gold/60 transition-colors">
-      <h3 className="text-2xl font-serif font-bold mb-2">{article.title}</h3>
-      <p className="text-gold text-sm mb-4">
-        {new Date(article.date).toLocaleDateString(dateLocale)}
-      </p>
-      <p className="text-gray-300 mb-6">{article.excerpt}</p>
-      <Link
-        href={`/${locale}/learning/${article.slug}`}
-        className="text-gold hover:text-gold/80 font-medium transition-colors"
-      >
-        {t('readMore')} →
-      </Link>
-    </article>
-  );
-}
-
-function ArticlesSection({ locale, t, articles }: { locale: string; t: Translate; articles: ArticleMetadata[] }) {
-  return (
-    <Section className="bg-charcoal text-warm-white">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-serif font-bold mb-4 text-center">{t('articlesTitle')}</h2>
-        <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
-          {t('articlesDescription')}
-        </p>
-        {articles.length === 0 ? (
-          <p className="text-center text-gray-300">{t('noArticles')}</p>
-        ) : (
-          <div className="grid md:grid-cols-2 gap-8">
-            {articles.map((article) => (
-              <ArticleCard key={article.slug} article={article} locale={locale} t={t} />
-            ))}
-          </div>
-        )}
-      </div>
-    </Section>
+    <div className="list">
+      {articles.map((article) => (
+        <Link key={article.slug} className="svc" href={`/${locale}/learning/${article.slug}`}>
+          <h3>{article.title}</h3>
+          <p>{article.excerpt}</p>
+          <span className="for">{new Date(article.date).toLocaleDateString(dateLocale)}</span>
+        </Link>
+      ))}
+    </div>
   );
 }
 
@@ -64,18 +39,16 @@ export default async function Learning({ params }: LocaleProps) {
 
   return (
     <PageTemplate title={t('title')} description={t('description')}>
-      <Section className="bg-warm-white">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-serif font-bold text-charcoal mb-4 text-center">
-            {t('glossaryTitle')}
-          </h2>
-          <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-            {t('glossaryDescription')}
-          </p>
-          <GlossaryWidget />
-        </div>
+      <Section>
+        <h2>{t('glossaryTitle')}</h2>
+        <p className="sub" style={{ margin: '24px 0 36px' }}>{t('glossaryDescription')}</p>
+        <GlossaryWidget tone="light" showHeading={false} />
       </Section>
-      <ArticlesSection locale={locale} t={t} articles={articles} />
+      <Section className="services">
+        <h2>{t('articlesTitle')}</h2>
+        <p className="sub" style={{ marginTop: 24 }}>{t('articlesDescription')}</p>
+        <ArticleList locale={locale} t={t} articles={articles} />
+      </Section>
     </PageTemplate>
   );
 }

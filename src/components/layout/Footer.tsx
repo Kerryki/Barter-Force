@@ -1,44 +1,16 @@
-import { useLocale, useTranslations } from 'next-intl';
+import Image from 'next/image';
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 import { broker } from '@/content/broker';
 
-const NAV_LINKS = [
-  { path: 'services', key: 'nav.services' },
+const LINKS = [
   { path: 'how-it-works', key: 'nav.howItWorks' },
   { path: 'about', key: 'nav.about' },
-  { path: 'learning', key: 'nav.learning' },
-] as const;
-
-const LEGAL_LINKS = [
   { path: 'fees', key: 'footer.links.fees' },
+  { path: 'learning', key: 'nav.learning' },
   { path: 'privacy', key: 'footer.links.privacy' },
   { path: 'terms', key: 'footer.links.terms' },
-  { path: 'contact', key: 'footer.links.contact' },
 ] as const;
-
-interface LinkColumnProps {
-  heading: string;
-  links: ReadonlyArray<{ path: string; key: string }>;
-}
-
-function LinkColumn({ heading, links }: LinkColumnProps) {
-  const t = useTranslations();
-  const locale = useLocale();
-  return (
-    <nav aria-label={heading}>
-      <p className="font-serif font-bold mb-3">{heading}</p>
-      <ul className="space-y-2 font-sans text-sm">
-        {links.map(({ path, key }) => (
-          <li key={path}>
-            <Link href={`/${locale}/${path}`} className="hover:text-gold transition-colors">
-              {t(key)}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-}
 
 /** Real licence details once confirmed in broker.ts, otherwise the translated placeholder. */
 function useLicenceLine(): string {
@@ -49,26 +21,30 @@ function useLicenceLine(): string {
 }
 
 export function Footer() {
-  const t = useTranslations('footer');
+  const t = useTranslations();
+  const locale = useLocale();
   const licenceLine = useLicenceLine();
 
   return (
-    <footer className="bg-charcoal text-warm-white py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-3">
-          <div>
-            <p className="font-serif font-bold text-xl">{broker.businessName}</p>
-            <p className="mt-2 text-sm text-gray-300 font-sans">{t('tagline')}</p>
-          </div>
-          <LinkColumn heading={t('navHeading')} links={NAV_LINKS} />
-          <LinkColumn heading={t('legalHeading')} links={LEGAL_LINKS} />
-        </div>
-
-        <div className="mt-10 border-t border-gold/30 pt-6 space-y-3 text-xs text-gray-300 font-sans">
-          <p>{licenceLine}</p>
-          <p>{t('disclaimer')}</p>
-          <p>{t('copyright')}</p>
-        </div>
+    <footer className="sitefooter">
+      <div className="wrap">
+        <p className="flogo">
+          <Image src="/logo.png" alt="" width={56} height={56} />
+          <span>
+            <strong>{broker.businessName}</strong> · {t('footer.location')}
+          </span>
+        </p>
+        <ul className="links">
+          {LINKS.map(({ path, key }) => (
+            <li key={path}>
+              <Link href={`/${locale}/${path}`}>{t(key)}</Link>
+            </li>
+          ))}
+        </ul>
+        <p>
+          {t('footer.disclaimer')} {licenceLine}
+        </p>
+        <p>{t('footer.copyright')}</p>
       </div>
     </footer>
   );

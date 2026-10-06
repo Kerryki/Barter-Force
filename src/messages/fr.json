@@ -1,8 +1,8 @@
 {
   "common": {
     "logo": "Barter Force",
-    "tagline": "Les finances, en toute clarté.",
-    "skipToContent": "Passer au contenu principal"
+    "skipToContent": "Passer au contenu principal",
+    "logoAlt": "Logo de Barter Force"
   },
   "nav": {
     "home": "Accueil",
@@ -12,13 +12,18 @@
     "learning": "Centre d'apprentissage",
     "contact": "Contact",
     "bookConsultation": "Prendre rendez-vous",
-    "menu": "Menu"
+    "budget": "Budget",
+    "credit": "Crédit",
+    "insurance": "Assurance",
+    "assistant": "Demandez à l'IA",
+    "switchLanguage": "Changer la langue",
+    "main": "Principal"
   },
   "hero": {
-    "headline": "Les finances, en toute clarté.",
-    "subheadline": "Un accompagnement financier privé pour celles et ceux qui ne se sont jamais sentis à l'aise avec la finance. Pas de jargon. Pas de pression. Juste un courtier de confiance qui explique chaque option avant que vous décidiez.",
+    "headline": "L'argent, enfin clair.",
+    "subheadline": "Des conseils financiers privés pour ceux qui ne se sont jamais sentis à l'aise avec la finance. Sans jargon, sans pression, sans présomptions. Seulement un courtier de confiance qui vous explique chaque option avant que vous décidiez.",
     "primaryCta": "Réserver une consultation gratuite",
-    "secondaryCta": "Voir comment je peux aider"
+    "secondaryCta": "Découvrez comment je peux vous aider"
   },
   "intro": {
     "title": "Nul besoin de comprendre la finance pour bien y réussir.",
@@ -29,39 +34,47 @@
     "title": "Là où je peux vous aider"
   },
   "processStrip": {
-    "title": "Comment nous travaillerons ensemble",
+    "title": "Un processus simple et serein",
     "steps": [
       {
         "title": "Nous discutons",
-        "description": "Une conversation gratuite sur votre situation actuelle et vos objectifs."
+        "description": "Une conversation gratuite sur votre situation actuelle et vos objectifs. Apportez vos questions, même les plus simples."
       },
       {
         "title": "Je fais les comparaisons",
-        "description": "Je prépare un résumé clair des coûts, des avantages et des compromis."
+        "description": "J'examine les options qui s'offrent à vous et je prépare un résumé clair : coûts, avantages et compromis côte à côte."
       },
       {
         "title": "Vous décidez",
-        "description": "Nous passons le plan en revue ensemble et vous choisissez à votre rythme."
+        "description": "Nous passons le plan en revue ensemble. Vous choisissez à votre rythme, et je reste à vos côtés une fois la paperasse terminée."
       }
     ]
   },
   "promise": {
-    "title": "Ma promesse envers vous",
+    "title": "Ce que vous pouvez attendre de moi",
     "items": [
-      "Un langage simple, toujours. Si un mot demande un dictionnaire, je l'explique d'abord.",
-      "Vos intérêts passent en premier. Je vous dirai quand une option ne vous convient pas, même si elle est plus facile à vendre.",
-      "Transparence totale sur les coûts. Vous savez ce que coûte chaque option et comment je suis rémunéré avant de vous engager.",
-      "Discrétion. Vos renseignements financiers restent confidentiels et ne sont communiqués qu'avec votre consentement."
+      {
+        "title": "Un langage clair, toujours",
+        "text": "Si un mot demande un dictionnaire, je vous l'explique d'abord."
+      },
+      {
+        "title": "Vos intérêts passent en premier",
+        "text": "Je vous dirai quand une option ne vous convient pas, même si la vente serait plus facile."
+      },
+      {
+        "title": "Transparence totale sur les coûts",
+        "text": "Vous saurez ce que chaque option coûte et comment je suis rémunéré avant de vous engager."
+      },
+      {
+        "title": "Discrétion",
+        "text": "Vos renseignements financiers restent confidentiels et ne sont partagés qu'avec votre consentement."
+      }
     ]
   },
   "testimonials": [],
-  "finalCta": {
-    "title": "Commençons par une conversation.",
-    "description": "Votre première consultation est gratuite et sans engagement. Dites-moi ce que vous avez en tête et je vous répondrai personnellement en un jour ouvrable.",
-    "button": "Réserver une consultation gratuite"
-  },
   "glossary": {
-    "title": "La finance, traduite"
+    "title": "La finance, traduite",
+    "hint": "Touchez un terme que vous avez déjà entendu."
   },
   "services": {
     "title": "Services",
@@ -77,19 +90,23 @@
     "cards": [
       {
         "title": "Hypothèques et financement",
-        "description": "Achat, renouvellement ou refinancement, avec des prêteurs comparés pour vous."
+        "description": "Achat d'une première propriété, renouvellement ou refinancement. Je compare les prêteurs pour vous et j'explique le taux, le terme et les pénalités en termes simples.",
+        "tag": "Premiers acheteurs"
       },
       {
         "title": "Épargne et placements",
-        "description": "Les bons comptes et un plan adapté à vos objectifs et à votre tolérance au risque."
+        "description": "Commencez avec les bons comptes, comme le CELI ou le REER, et bâtissez un plan qui correspond à vos objectifs et à votre tolérance au risque.",
+        "tag": "Nouveaux investisseurs"
       },
       {
         "title": "Santé du crédit",
-        "description": "Comprenez votre profil et suivez un parcours clair pour le renforcer."
+        "description": "Comprenez ce qui façonne votre dossier de crédit et suivez un parcours clair, étape par étape, pour le renforcer avant d'emprunter.",
+        "tag": "Reconstruction ou début de parcours"
       },
       {
         "title": "Planification de la protection",
-        "description": "Assurez-vous que votre revenu, votre famille et vos biens sont protégés sans payer trop cher."
+        "description": "Examinez ce qui arriverait à votre revenu, à votre famille et à vos biens si la vie change, et trouvez une couverture adaptée sans payer trop cher.",
+        "tag": "Familles et propriétaires"
       }
     ],
     "items": {
@@ -339,26 +356,22 @@
     "title": "Prendre rendez-vous",
     "description": "Dites-moi brièvement ce que vous avez en tête. Votre première consultation est gratuite et sans engagement, et je vous répondrai personnellement en un jour ouvrable.",
     "form": {
-      "nameLabel": "Nom complet",
-      "namePlaceholder": "Votre nom complet",
-      "emailLabel": "Adresse courriel",
-      "emailPlaceholder": "votre.courriel@exemple.com",
+      "nameLabel": "Votre nom",
+      "emailLabel": "Courriel",
       "phoneLabel": "Téléphone (facultatif)",
-      "phonePlaceholder": "514-555-0123",
-      "topicLabel": "De quoi avez-vous besoin?",
+      "topicLabel": "Avec quoi aimeriez-vous de l'aide?",
       "topicPlaceholder": "Choisissez une option",
       "topics": {
-        "mortgages": "Hypothèques et financement",
-        "savingsInvesting": "Épargne et placements",
-        "creditHealth": "Santé du crédit",
-        "protection": "Planification de la protection",
-        "notSure": "Je ne sais pas encore"
+        "mortgages": "Achat ou refinancement d'une propriété",
+        "savingsInvesting": "Commencer à épargner ou à investir",
+        "creditHealth": "Améliorer mon crédit",
+        "protection": "Protéger ma famille ou mon revenu",
+        "notSure": "Je ne suis pas encore certain"
       },
-      "messageLabel": "Message",
-      "messagePlaceholder": "Parlez-moi brièvement de votre situation",
+      "messageLabel": "Autre chose que vous aimeriez me dire (facultatif)",
       "consentLabel": "J'accepte d'être contacté au sujet de ma demande et j'ai lu la",
       "privacyLinkLabel": "Politique de confidentialité",
-      "sendLabel": "Envoyer ma demande",
+      "sendLabel": "Demander ma consultation",
       "sendingLabel": "Envoi en cours...",
       "successMessage": "Merci, {firstName}. J'ai bien reçu votre demande et je vous répondrai personnellement en un jour ouvrable.",
       "errorMessage": "Une erreur s'est produite. Veuillez réessayer.",
@@ -368,12 +381,11 @@
         "emailInvalid": "Veuillez entrer une adresse courriel valide.",
         "phoneInvalid": "Veuillez entrer un numéro de téléphone valide.",
         "topicRequired": "Veuillez choisir un sujet.",
-        "messageTooShort": "Veuillez écrire au moins 10 caractères.",
         "messageTooLong": "Le message est trop long.",
         "consentRequired": "Votre consentement est nécessaire pour que je puisse vous répondre."
-      }
-    },
-    "calendarTitle": "Ou réservez directement un moment"
+      },
+      "privacyNote": "Votre message m'est transmis directement et je vous réponds personnellement. Consultez la politique de confidentialité pour savoir comment vos renseignements sont traités."
+    }
   },
   "cookies": {
     "title": "Nous respectons votre vie privée",
@@ -389,14 +401,10 @@
     "glossaryDescription": "Les termes financiers essentiels expliqués en langage courant.",
     "articlesTitle": "Articles",
     "articlesDescription": "Guides approfondis sur les hypothèques, les placements, le crédit et la protection.",
-    "readMore": "Lire la suite",
     "backToLearning": "Retour au Centre d'apprentissage",
     "noArticles": "Aucun article disponible pour le moment."
   },
   "footer": {
-    "tagline": "Les finances, en toute clarté.",
-    "navHeading": "Explorer",
-    "legalHeading": "Mentions légales",
     "copyright": "© 2026 Barter Force. Tous droits réservés.",
     "links": {
       "privacy": "Politique de confidentialité",
@@ -404,8 +412,9 @@
       "fees": "Frais et transparence",
       "contact": "Contact"
     },
-    "licenceLine": "[TODO: nom du courtier, numéro de permis et organisme de réglementation]",
-    "disclaimer": "L'information présentée sur ce site est générale et éducative et ne constitue pas un conseil financier personnalisé. [TODO: confirmer la formulation de l'avis selon le plan directeur et les exigences de l'organisme de réglementation]"
+    "licenceLine": "Permis et inscription : [TODO: ajoutez ici vos numéros de permis et l'organisme de réglementation].",
+    "disclaimer": "À titre informatif seulement. Ce site ne constitue pas un conseil financier, juridique ou fiscal personnalisé. Tous les placements comportent des risques et les rendements ne sont jamais garantis.",
+    "location": "Montréal (Québec)"
   },
   "privacy": {
     "title": "Politique de confidentialité",
@@ -534,5 +543,143 @@
         ]
       }
     ]
+  },
+  "budget": {
+    "title": "Sachez où va votre argent",
+    "intro1": "Un budget n'est pas une punition. C'est un plan qui dit à votre argent où aller, pour que vous ne vous demandiez plus jamais où il est passé.",
+    "intro2": "Un bon point de départ consiste à répartir votre revenu net entre les besoins, les désirs et l'épargne. Voyez-y un guide, non une règle. Votre ville, votre famille et vos objectifs déterminent vos vrais chiffres.",
+    "tips": [
+      {
+        "title": "Connaissez votre chiffre",
+        "text": "Commencez par ce qui entre réellement dans votre compte chaque mois."
+      },
+      {
+        "title": "Payez-vous en premier",
+        "text": "Transférez votre épargne le jour de la paie, avant que les dépenses commencent."
+      },
+      {
+        "title": "Couvrez l'essentiel",
+        "text": "Le logement, la nourriture, le transport et les factures passent avant tout le reste."
+      },
+      {
+        "title": "Faites le point chaque mois",
+        "text": "Dix minutes par mois empêchent les petites fuites de devenir de gros problèmes."
+      }
+    ],
+    "income": "Revenu mensuel après impôt",
+    "essentials": "Essentiel : logement, nourriture, transport, factures",
+    "other": "Tout le reste : restaurants, abonnements, loisirs",
+    "result": "Reste chaque mois pour l'épargne et les objectifs",
+    "ofIncome": "de votre revenu",
+    "guideCommon": "Repère courant : 20 % pour l'épargne",
+    "guideNeeds": "Repère : besoins 50 %",
+    "guideWants": "Repère : désirs 30 %",
+    "guideSavings": "Repère : épargne 20 %",
+    "msgNone": "Ajoutez votre revenu mensuel pour voir votre plan.",
+    "msgOver": "Vous dépensez plus que vous gagnez chaque mois. C'est courant et on peut y remédier; une courte conversation est le meilleur point de départ.",
+    "msgGood": "Vous atteignez ou dépassez le repère courant de 20 % d'épargne. La question suivante est de savoir où cet argent travaille le mieux pour vous.",
+    "msgLow": "Vous épargnez moins que le repère courant de 20 %. De petits changements précis comblent généralement l'écart plus facilement qu'on ne le croit.",
+    "fine": "À titre d'illustration seulement. Les vrais budgets incluent des dépenses irrégulières, des remboursements de dettes et des objectifs, que nous établissons ensemble."
+  },
+  "leverage": {
+    "title": "Le pouvoir du crédit, bien utilisé",
+    "intro": "Le crédit est un outil. Bien utilisé, il vous permet de posséder aujourd'hui quelque chose de précieux que l'argent comptant seul ne pourrait pas acheter, et laisse cet actif travailler pour vous pendant que vous le remboursez. Mal utilisé, il joue contre vous. C'est ce qu'on appelle l'effet de levier.",
+    "helpsTitle": "Il peut aider lorsque",
+    "helps": "l'actif peut prendre de la valeur ou générer un revenu, les paiements s'insèrent confortablement dans votre budget, vous gardez une réserve de liquidités et le coût d'emprunt est inférieur à ce que l'actif peut raisonnablement rapporter.",
+    "hurtsTitle": "Il fait mal lorsque",
+    "hurts": "l'emprunt sert à acheter ce qui perd de la valeur, les paiements vous étranglent, ou les taux montent sans que vous l'ayez prévu. L'effet de levier amplifie les pertes autant que les gains.",
+    "closing": "Mon rôle est de vous montrer les deux côtés avant que vous empruntiez, et de vous dire honnêtement quand le risque est trop élevé.",
+    "example": "50 000 $ de votre propre argent permettent d'acheter une propriété de 250 000 $ avec une hypothèque.",
+    "slider": "Si la valeur de la propriété varie de",
+    "rowChange": "Variation de la valeur de la propriété",
+    "rowLeveraged": "Rendement sur vos 50 000 $ avec une hypothèque",
+    "rowPlain": "Les mêmes 50 000 $ dans le même actif, sans emprunt",
+    "fine": "Illustration simplifiée. Elle ignore les intérêts, les frais, les impôts et les autres coûts, et la valeur d'une propriété peut baisser comme monter. Emprunter pour investir sur les marchés comporte un risque encore plus élevé."
+  },
+  "insurance": {
+    "title": "Protégez les personnes qui comptent sur vous",
+    "intro": "L'assurance vie verse une somme d'argent aux personnes que vous désignez si vous décédez. Elle peut remplacer le revenu dont votre famille dépend, aider à rembourser des dettes comme une hypothèque pour qu'elle puisse rester dans sa maison, et couvrir les frais funéraires ou les études d'un enfant.",
+    "term": "Assurance vie temporaire",
+    "permanent": "Assurance vie permanente",
+    "rows": [
+      {
+        "label": "En quoi ça consiste",
+        "term": "Une couverture pour un nombre d'années déterminé, par exemple 10, 20 ou 30 ans.",
+        "permanent": "Une couverture conçue pour durer toute la vie, tant que les primes sont payées."
+      },
+      {
+        "label": "Coût",
+        "term": "Primes généralement plus basses au départ.",
+        "permanent": "Primes généralement plus élevées."
+      },
+      {
+        "label": "Avantages",
+        "term": "Généralement sans composante d'épargne.",
+        "permanent": "Certaines polices accumulent une valeur de rachat avec le temps."
+      },
+      {
+        "label": "Convient souvent à",
+        "term": "Les familles qui protègent leur revenu et leurs dettes pendant les années où elles dépendent de vous.",
+        "permanent": "Des besoins à vie, comme laisser un héritage ou planifier une succession."
+      }
+    ],
+    "more": [
+      {
+        "title": "Quel montant suffit?",
+        "text": "Nous partons de vos vrais chiffres : qui dépend de vous, ce que vous devez et combien d'années de soutien ces personnes auraient besoin. Si vous n'avez pas besoin de couverture, je vous le dirai."
+      },
+      {
+        "title": "Déjà couvert par votre travail ou votre prêteur?",
+        "text": "Cette couverture peut prendre fin si vous changez d'emploi ou de prêt. Nous vérifions ce que vous conserveriez et la comparons à une police personnelle."
+      }
+    ],
+    "fine": "La couverture dépend de l'admissibilité, des questions de santé et de l'approbation de l'assureur. [TODO: ajoutez votre permis d'assurance et vos assureurs partenaires.]",
+    "aspect": "Aspect"
+  },
+  "assistant": {
+    "title": "Des questions à toute heure? Demandez à l'assistant.",
+    "intro": "Obtenez une réponse en langage clair à une question financière dès qu'elle vous vient à l'esprit, puis réservez une conversation lorsque vous êtes prêt à obtenir des conseils adaptés à votre situation.",
+    "note": "Information générale seulement. L'assistant ne donne pas de conseils personnels; veuillez donc ne pas saisir de renseignements personnels ni bancaires.",
+    "suggestionsLabel": "Questions suggérées",
+    "suggestions": [
+      {
+        "label": "Terme ou amortissement",
+        "question": "Quelle est la différence entre le terme et l'amortissement?",
+        "answer": "Le terme est la durée pendant laquelle votre taux d'intérêt et vos conditions s'appliquent avant le renouvellement. L'amortissement est la durée totale prévue pour rembourser tout le prêt, par exemple 25 ans. On renouvelle généralement plusieurs fois au cours d'un même amortissement."
+      },
+      {
+        "label": "Combien épargner?",
+        "question": "Combien devrais-je épargner chaque mois?",
+        "answer": "Un bon point de départ est d'environ 20 % de votre revenu net, mais le bon chiffre dépend de vos objectifs et de vos dépenses. Essayez l'outil de budget ci-dessus, puis réservez une consultation pour fixer un montant qui vous convient."
+      },
+      {
+        "label": "L'assurance vie en vaut-elle la peine?",
+        "question": "L'assurance vie en vaut-elle la peine?",
+        "answer": "Elle mérite considération si quelqu'un dépend de votre revenu ou hériterait de dettes comme une hypothèque. Si personne ne dépend de vous, vous pourriez avoir besoin de peu de couverture, voire d'aucune. L'assurance temporaire est souvent le point de départ le plus simple et le moins coûteux."
+      },
+      {
+        "label": "Quand emprunter est-il judicieux?",
+        "question": "Quand est-ce une bonne idée d'emprunter?",
+        "answer": "Emprunter peut avoir du sens lorsque cela permet d'acheter quelque chose qui peut prendre de la valeur ou générer un revenu, que les paiements s'insèrent confortablement dans votre budget et que vous gardez une réserve. C'est risqué lorsque cela étire votre budget ou sert à acheter des biens qui perdent de la valeur."
+      }
+    ],
+    "greeting": "Bonjour. Posez-moi vos questions sur le budget, le crédit, l'hypothèque, l'épargne ou l'assurance, et je vous les expliquerai simplement.",
+    "placeholder": "Écrivez votre question",
+    "inputLabel": "Votre question",
+    "ask": "Demander",
+    "unavailable": "L'assistant en direct n'est pas disponible dans cette vue. Réservez une consultation gratuite et je répondrai personnellement à votre question."
+  },
+  "contactSection": {
+    "title": "Commençons par une conversation",
+    "description": "Votre première consultation est gratuite et sans engagement. Dites-moi un peu ce que vous avez en tête et je vous répondrai personnellement dans un délai d'un jour ouvrable.",
+    "emailLabel": "Courriel",
+    "phoneLabel": "Téléphone",
+    "locationLabel": "Lieu",
+    "locationValue": "Montréal (Québec) · En personne ou en vidéo",
+    "calendarTitle": "Choisissez l'heure qui vous convient",
+    "openBooking": "Ouvrir la page de réservation",
+    "calendarMissing": "[TODO: ajoutez votre lien Calendly (NEXT_PUBLIC_CALENDAR_URL) pour afficher votre calendrier de réservation.]",
+    "writeInstead": "Vous préférez écrire? Envoyez un message",
+    "contactTodo": "[TODO: ajoutez les coordonnées du courtier dans src/content/broker.ts]"
   }
 }

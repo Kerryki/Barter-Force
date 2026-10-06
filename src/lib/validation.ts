@@ -30,7 +30,8 @@ export const contactFormSchema = z.object({
     .optional()
     .default(''),
   topic: z.enum(CONTACT_TOPICS, { error: 'topicRequired' }),
-  message: z.string().trim().min(10, 'messageTooShort').max(5000, 'messageTooLong'),
+  // Optional, as in the approved design ("Anything you would like me to know (optional)")
+  message: z.string().trim().max(5000, 'messageTooLong').optional().default(''),
   // Honeypot: real visitors leave it empty; the API silently discards submissions that fill it
   website: z.string().optional().default(''),
   consent: z.boolean().refine((val) => val === true, 'consentRequired'),

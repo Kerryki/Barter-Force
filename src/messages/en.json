@@ -1,8 +1,8 @@
 {
   "common": {
     "logo": "Barter Force",
-    "tagline": "Money matters, made clear.",
-    "skipToContent": "Skip to main content"
+    "skipToContent": "Skip to main content",
+    "logoAlt": "Barter Force logo"
   },
   "nav": {
     "home": "Home",
@@ -12,11 +12,16 @@
     "learning": "Learning centre",
     "contact": "Contact",
     "bookConsultation": "Book a consultation",
-    "menu": "Menu"
+    "budget": "Budget",
+    "credit": "Credit",
+    "insurance": "Insurance",
+    "assistant": "Ask AI",
+    "switchLanguage": "Switch language",
+    "main": "Main"
   },
   "hero": {
     "headline": "Money matters, made clear.",
-    "subheadline": "Private financial guidance for people who have never felt at home with finance. No jargon. No pressure. Just a trusted broker who explains every option before you decide.",
+    "subheadline": "Private financial guidance for people who have never felt at home with finance. No jargon, no pressure, no assumptions. Just a trusted broker who explains every option before you decide.",
     "primaryCta": "Book a free consultation",
     "secondaryCta": "See how I can help"
   },
@@ -29,39 +34,47 @@
     "title": "Where I can help"
   },
   "processStrip": {
-    "title": "How we will work together",
+    "title": "A calm, simple process",
     "steps": [
       {
         "title": "We talk",
-        "description": "A free conversation about where you are and where you want to be."
+        "description": "A free conversation about where you are and where you want to be. Bring your questions, however basic."
       },
       {
         "title": "I do the comparing",
-        "description": "I prepare a clear summary of costs, benefits and trade-offs."
+        "description": "I review the options available to you and prepare a clear summary: costs, benefits and trade-offs side by side."
       },
       {
         "title": "You decide",
-        "description": "We review the plan together and you choose at your own pace."
+        "description": "We go through the plan together. You choose at your own pace, and I stay with you after the paperwork is done."
       }
     ]
   },
   "promise": {
-    "title": "My promise to you",
+    "title": "What you can expect from me",
     "items": [
-      "Plain language, always. If a word needs a dictionary, I explain it first.",
-      "Your interests come first. I will tell you when an option is not right for you, even if it is the easier sale.",
-      "Full transparency on costs. You know what each option costs and how I am paid before you commit.",
-      "Discretion. Your financial information stays private and is shared only with your consent."
+      {
+        "title": "Plain language, always",
+        "text": "If a word needs a dictionary, I will explain it first."
+      },
+      {
+        "title": "Your interests come first",
+        "text": "I will tell you when an option is not right for you, even if it is the easier sale."
+      },
+      {
+        "title": "Full transparency on costs",
+        "text": "You will know what each option costs and how I am compensated before you commit."
+      },
+      {
+        "title": "Discretion",
+        "text": "Your financial information stays private and is shared only with your consent."
+      }
     ]
   },
   "testimonials": [],
-  "finalCta": {
-    "title": "Begin with a conversation.",
-    "description": "Your first consultation is free and without obligation. Tell me what you have in mind and I will reply personally within one business day.",
-    "button": "Book a free consultation"
-  },
   "glossary": {
-    "title": "Finance, translated"
+    "title": "Finance, translated",
+    "hint": "Tap a term you have heard before."
   },
   "services": {
     "title": "Services",
@@ -76,20 +89,24 @@
     },
     "cards": [
       {
-        "title": "Mortgages and financing",
-        "description": "Buying, renewing or refinancing, with lenders compared for you."
+        "title": "Mortgages & financing",
+        "description": "Buying a first home, renewing, or refinancing. I compare lenders on your behalf and explain the rate, term and penalties in plain terms.",
+        "tag": "First-time buyers"
       },
       {
-        "title": "Savings and investing",
-        "description": "The right accounts and a plan that fits your goals and comfort with risk."
+        "title": "Savings & investing",
+        "description": "Start with the right accounts, such as the TFSA or RRSP, and build a plan that matches your goals and your comfort with risk.",
+        "tag": "New investors"
       },
       {
         "title": "Credit health",
-        "description": "Understand your profile and follow a clear path to strengthen it."
+        "description": "Understand what shapes your credit profile and follow a clear, step-by-step path to strengthen it before you borrow.",
+        "tag": "Rebuilding or starting out"
       },
       {
         "title": "Protection planning",
-        "description": "Make sure your income, family and property are covered without overpaying."
+        "description": "Review what would happen to your income, family and property if life changes, and find coverage that fits without overpaying.",
+        "tag": "Families and owners"
       }
     ],
     "items": {
@@ -339,26 +356,22 @@
     "title": "Book a consultation",
     "description": "Tell me a little about what you have in mind. Your first consultation is free and without obligation, and I will reply personally within one business day.",
     "form": {
-      "nameLabel": "Full name",
-      "namePlaceholder": "Your full name",
-      "emailLabel": "Email address",
-      "emailPlaceholder": "your.email@example.com",
+      "nameLabel": "Your name",
+      "emailLabel": "Email",
       "phoneLabel": "Phone (optional)",
-      "phonePlaceholder": "514-555-0123",
-      "topicLabel": "What do you need help with?",
+      "topicLabel": "What would you like help with?",
       "topicPlaceholder": "Choose one",
       "topics": {
-        "mortgages": "Mortgages and financing",
-        "savingsInvesting": "Savings and investing",
-        "creditHealth": "Credit health",
-        "protection": "Protection planning",
+        "mortgages": "Buying or refinancing a home",
+        "savingsInvesting": "Starting to save or invest",
+        "creditHealth": "Improving my credit",
+        "protection": "Protecting my family or income",
         "notSure": "I am not sure yet"
       },
-      "messageLabel": "Message",
-      "messagePlaceholder": "Tell me a little about your situation",
+      "messageLabel": "Anything you would like me to know (optional)",
       "consentLabel": "I agree to be contacted about my request and I have read the",
       "privacyLinkLabel": "Privacy Policy",
-      "sendLabel": "Send my request",
+      "sendLabel": "Request my consultation",
       "sendingLabel": "Sending...",
       "successMessage": "Thank you, {firstName}. I have received your request and will reply personally within one business day.",
       "errorMessage": "Something went wrong. Please try again.",
@@ -368,12 +381,11 @@
         "emailInvalid": "Please enter a valid email address.",
         "phoneInvalid": "Please enter a valid phone number.",
         "topicRequired": "Please choose a topic.",
-        "messageTooShort": "Please write at least 10 characters.",
         "messageTooLong": "Message is too long.",
         "consentRequired": "Your consent is required so I can reply to you."
-      }
-    },
-    "calendarTitle": "Or book a time directly"
+      },
+      "privacyNote": "Your message goes straight to me and I reply personally. See the Privacy Policy for how your information is handled."
+    }
   },
   "cookies": {
     "title": "We respect your privacy",
@@ -389,14 +401,10 @@
     "glossaryDescription": "Essential finance terms explained in plain language.",
     "articlesTitle": "Articles",
     "articlesDescription": "In-depth guides on mortgages, investing, credit and protection.",
-    "readMore": "Read more",
     "backToLearning": "Back to Learning Centre",
     "noArticles": "No articles available yet."
   },
   "footer": {
-    "tagline": "Money matters, made clear.",
-    "navHeading": "Explore",
-    "legalHeading": "Legal",
     "copyright": "© 2026 Barter Force. All rights reserved.",
     "links": {
       "privacy": "Privacy Policy",
@@ -404,8 +412,9 @@
       "fees": "Fees and transparency",
       "contact": "Contact"
     },
-    "licenceLine": "[TODO: broker name, licence number and regulator]",
-    "disclaimer": "The information on this site is general and educational and is not personalised financial advice. [TODO: confirm the disclaimer wording from the blueprint and regulator requirements]"
+    "licenceLine": "Licence and registration details: [TODO: add your licence numbers and regulatory body here].",
+    "disclaimer": "For information purposes only. This website does not constitute personalized financial, legal or tax advice. All investments carry risk and returns are never guaranteed.",
+    "location": "Montréal, Québec"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -534,5 +543,143 @@
         ]
       }
     ]
+  },
+  "budget": {
+    "title": "Know where your money goes",
+    "intro1": "A budget is not a punishment. It is a plan that tells your money where to go, so you are never left wondering where it went.",
+    "intro2": "A common starting point is to divide take-home pay into needs, wants and savings. Treat it as a guide, not a rule. Your city, your family and your goals decide your real numbers.",
+    "tips": [
+      {
+        "title": "Know your number",
+        "text": "Start with what actually reaches your account each month."
+      },
+      {
+        "title": "Pay yourself first",
+        "text": "Move savings out on payday, before spending begins."
+      },
+      {
+        "title": "Cover the essentials",
+        "text": "Housing, food, transport and bills come before everything else."
+      },
+      {
+        "title": "Review monthly",
+        "text": "Ten minutes a month keeps small leaks from becoming big ones."
+      }
+    ],
+    "income": "Monthly income after tax",
+    "essentials": "Essentials: housing, food, transport, bills",
+    "other": "Everything else: dining out, subscriptions, leisure",
+    "result": "Left each month for savings and goals",
+    "ofIncome": "of your income",
+    "guideCommon": "Common guide: 20% to savings",
+    "guideNeeds": "Guide: needs 50%",
+    "guideWants": "Guide: wants 30%",
+    "guideSavings": "Guide: savings 20%",
+    "msgNone": "Add your monthly income to see your plan.",
+    "msgOver": "You are spending more than you earn each month. That is common and fixable, and a short conversation is the best place to start.",
+    "msgGood": "You are at or above the common 20% savings guide. The next question is where that money works hardest for you.",
+    "msgLow": "You are saving less than the common 20% guide. Small, specific changes usually close the gap more easily than people expect.",
+    "fine": "An illustration only. Real budgets include irregular costs, debt payments and goals, which we map out together."
+  },
+  "leverage": {
+    "title": "The power of credit, used wisely",
+    "intro": "Credit is a tool. Used with care, it lets you own something valuable today that cash alone could not buy, and lets that asset work for you while you pay it off. Used carelessly, it works against you. This is called leverage.",
+    "helpsTitle": "It can help when",
+    "helps": "the asset can grow in value or earn income, the payments fit comfortably in your budget, you keep a cash cushion, and the cost of borrowing is lower than what you can reasonably expect the asset to deliver.",
+    "hurtsTitle": "It hurts when",
+    "hurts": "the borrowing buys something that loses value, payments stretch you thin, or rates rise and you did not plan for it. Leverage magnifies losses just as it magnifies gains.",
+    "closing": "My role is to show you both sides before you borrow, and to tell you honestly when the risk is too high.",
+    "example": "$50,000 of your own money buys a $250,000 property with a mortgage.",
+    "slider": "If the property value changes by",
+    "rowChange": "Change in property value",
+    "rowLeveraged": "Return on your $50,000 using a mortgage",
+    "rowPlain": "Same $50,000 in the same asset, no borrowing",
+    "fine": "A simplified illustration. It ignores interest, fees, taxes and other costs, and property values can fall as well as rise. Borrowing to invest in markets carries even higher risk."
+  },
+  "insurance": {
+    "title": "Protection for the people who depend on you",
+    "intro": "Life insurance pays a sum of money to the people you choose if you pass away. It can replace income your family relies on, help pay off debts such as a mortgage so they can stay in their home, and cover final expenses or a child's education.",
+    "term": "Term life insurance",
+    "permanent": "Permanent life insurance",
+    "rows": [
+      {
+        "label": "What it is",
+        "term": "Coverage for a set number of years, such as 10, 20 or 30.",
+        "permanent": "Coverage designed to last your whole life, as long as premiums are paid."
+      },
+      {
+        "label": "Cost",
+        "term": "Generally lower premiums to start.",
+        "permanent": "Generally higher premiums."
+      },
+      {
+        "label": "Extras",
+        "term": "Usually no savings component.",
+        "permanent": "Some policies build a cash value over time."
+      },
+      {
+        "label": "Often suits",
+        "term": "Families protecting income and debts during the years they depend on you.",
+        "permanent": "Lifelong needs, such as leaving an inheritance or planning an estate."
+      }
+    ],
+    "more": [
+      {
+        "title": "How much is enough?",
+        "text": "We start from your real numbers: who depends on you, what you owe, and how many years of support they would need. If you do not need coverage, I will say so."
+      },
+      {
+        "title": "Already covered through work or your lender?",
+        "text": "That coverage can end when you change jobs or loans. We check what you would keep, and compare it with a personal policy."
+      }
+    ],
+    "fine": "Coverage depends on eligibility, health questions and the insurer's approval. [TODO: add your insurance licence details and insurer partners.]",
+    "aspect": "Aspect"
+  },
+  "assistant": {
+    "title": "Questions at any hour? Ask the assistant.",
+    "intro": "Get a plain-language answer to a finance question whenever it occurs to you, then book a conversation when you are ready for advice that fits your situation.",
+    "note": "General education only. It does not give personal advice, so please do not enter personal or account details.",
+    "suggestionsLabel": "Suggested questions",
+    "suggestions": [
+      {
+        "label": "Term vs amortization",
+        "question": "What is the difference between a term and an amortization?",
+        "answer": "The term is how long your interest rate and conditions last before you renew. The amortization is the total time planned to repay the whole loan, such as 25 years. You usually renew several times during one amortization."
+      },
+      {
+        "label": "How much to save?",
+        "question": "How much should I save each month?",
+        "answer": "A common starting point is about 20% of take-home pay, but the right number depends on your goals and expenses. Try the budget tool above, then book a consultation to set a figure that fits you."
+      },
+      {
+        "label": "Is life insurance worth it?",
+        "question": "Is life insurance worth it?",
+        "answer": "It is worth considering if someone depends on your income or would inherit debts such as a mortgage. If nobody depends on you, you may need little or none. Term coverage is often the simplest and least costly place to start."
+      },
+      {
+        "label": "When is borrowing smart?",
+        "question": "When is borrowing a good idea?",
+        "answer": "Borrowing can make sense when it buys something that can grow in value or earn income, when payments fit comfortably in your budget, and when you keep a cash cushion. It is risky when it stretches your budget or buys things that lose value."
+      }
+    ],
+    "greeting": "Hello. Ask me anything about budgeting, credit, mortgages, saving or insurance, and I will explain it simply.",
+    "placeholder": "Type your question",
+    "inputLabel": "Your question",
+    "ask": "Ask",
+    "unavailable": "The live assistant is not available in this view. Book a free consultation and I will answer your question personally."
+  },
+  "contactSection": {
+    "title": "Begin with a conversation",
+    "description": "Your first consultation is free and without obligation. Tell me a little about what you have in mind and I will reply personally within one business day.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "locationValue": "Montréal, Québec · In person or by video",
+    "calendarTitle": "Choose a time that suits you",
+    "openBooking": "Open the booking page",
+    "calendarMissing": "[TODO: add your Calendly link (NEXT_PUBLIC_CALENDAR_URL) to show your booking calendar.]",
+    "writeInstead": "Prefer to write instead? Send a message",
+    "contactTodo": "[TODO: add the broker's contact details in src/content/broker.ts]"
   }
 }

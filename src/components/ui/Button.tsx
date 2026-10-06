@@ -2,7 +2,8 @@ import Link from 'next/link';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant?: 'primary' | 'secondary';
+  /** `ghost` is an outlined button for use on dark backgrounds. */
+  variant?: 'primary' | 'ghost';
   href?: string;
 }
 
@@ -14,15 +15,7 @@ export function Button({
   href,
   ...props
 }: ButtonProps) {
-  const baseClass =
-    'px-6 py-3 font-medium transition-colors rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 inline-block';
-
-  const variantClass =
-    variant === 'primary'
-      ? 'bg-gold text-charcoal hover:bg-warm-white focus:ring-gold'
-      : 'bg-warm-white text-charcoal hover:bg-gold focus:ring-gold';
-
-  const classes = `${baseClass} ${variantClass} ${className}`;
+  const classes = `btn${variant === 'ghost' ? ' ghost' : ''} ${className}`.trim();
 
   if (href) {
     return (
@@ -33,11 +26,7 @@ export function Button({
   }
 
   return (
-    <button
-      type={type}
-      className={classes}
-      {...props}
-    >
+    <button type={type} className={classes} {...props}>
       {children}
     </button>
   );

@@ -6,7 +6,7 @@ Private financial brokerage website for Emile, Montréal, Québec: mortgages, sa
 
 Next.js 15 (App Router) · React 19 · TypeScript · next-intl 4 (EN/FR) · Tailwind CSS 3 · react-hook-form + Zod · Resend (contact email) · vitest.
 
-Brand: charcoal `#2C2C2C`, gold `#D4A574`, warm-white `#F5F1E8`, Cormorant Garamond + Manrope. Use `text-gold-dark` (not `text-gold`) for gold text on light backgrounds so it meets contrast requirements.
+Design: follows the approved mock-up (`Barter_Force.html`): colour tokens and dark mode (system setting) live as CSS variables in `src/styles/globals.css`; Cormorant Garamond headings (weight 500) with Manrope body; square corners and thin rules. Tailwind colours (`bg-bg`, `text-ink`, `bg-deep`, `text-gold`) map to the same variables.
 
 ## Getting started
 
@@ -31,7 +31,9 @@ npm run dev                        # http://localhost:3000 (redirects to /fr)
 - `src/content/glossary.ts`: 13 bilingual finance terms.
 - `src/messages/{en,fr}.json`: all page copy. Keys must match exactly.
 - `src/blog/articles/`: Learning Centre articles (`slug.mdx` and `slug.fr.mdx`).
-- `src/app/[locale]/`: pages. `src/app/api/contact/`: contact form endpoint.
+- `src/app/[locale]/`: pages. The home page is one long page (hero, intro, services, budget, credit, insurance, assistant, process, promise, contact); inner pages share the same look.
+- `src/lib/calculators.ts`: budget and leverage maths (tested).
+- `src/components/home/AssistantSection.tsx`: the "Ask the assistant" chat. There is no live AI: suggested questions get fixed answers. `src/app/api/contact/`: contact form endpoint.
 
 ## Content rules
 
@@ -69,4 +71,4 @@ In production the contact endpoint returns 503 if the Resend variables are missi
 
 ## Deployment
 
-See `.claude/DEPLOYMENT.md`.
+See `docs/DEPLOYMENT.md`.
