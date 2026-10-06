@@ -1,12 +1,15 @@
 interface SectionProps {
   children: React.ReactNode;
+  id?: string;
   className?: string;
+  /** Extra class on the inner `.wrap` container (for example `two` or `grid`). */
+  wrapClassName?: string;
 }
 
-export function Section({ children, className = '' }: SectionProps) {
+export function Section({ children, id, className = '', wrapClassName = '' }: SectionProps) {
   return (
-    <section className={`py-20 md:py-28 ${className}`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
+    <section id={id} className={className}>
+      <div className={`wrap ${wrapClassName}`.trim()}>{children}</div>
     </section>
   );
 }

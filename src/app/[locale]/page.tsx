@@ -1,8 +1,10 @@
 import { setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
-import { GoldDivider } from '@/components/ui/GoldDivider';
+import { AssistantSection } from '@/components/home/AssistantSection';
+import { BudgetSection } from '@/components/home/BudgetSection';
+import { InsuranceSection } from '@/components/home/InsuranceSection';
+import { LeverageSection } from '@/components/home/LeverageSection';
 import {
-  FinalCtaSection,
   HeroSection,
   IntroSection,
   ProcessSection,
@@ -10,6 +12,7 @@ import {
   ServicesSection,
   TestimonialsSection,
 } from '@/components/home/HomeSections';
+import { ContactSection } from '@/components/contact/ContactSection';
 import { pageMetadata } from '@/lib/metadata';
 import type { LocaleProps } from '@/lib/page-props';
 
@@ -25,17 +28,16 @@ export default async function Home({ params }: LocaleProps) {
   return (
     <>
       <HeroSection locale={locale} />
-      <GoldDivider />
       <IntroSection />
-      <GoldDivider />
       <ServicesSection locale={locale} />
-      <GoldDivider />
+      <BudgetSection />
+      <LeverageSection />
+      <InsuranceSection />
+      <AssistantSection />
       <ProcessSection />
-      <GoldDivider />
       <PromiseSection />
       <TestimonialsSection />
-      <GoldDivider />
-      <FinalCtaSection locale={locale} />
+      <ContactSection />
     </>
   );
 }

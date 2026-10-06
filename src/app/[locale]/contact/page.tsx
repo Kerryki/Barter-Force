@@ -1,9 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
+import { ContactSection } from '@/components/contact/ContactSection';
 import { PageTemplate } from '@/components/pages/PageTemplate';
-import { Section } from '@/components/layout/Section';
-import { ContactForm } from '@/components/contact/ContactForm';
-import { CalendarEmbed } from '@/components/contact/CalendarEmbed';
 import { pageMetadata } from '@/lib/metadata';
 import type { LocaleProps } from '@/lib/page-props';
 
@@ -19,12 +17,7 @@ export default async function Contact({ params }: LocaleProps) {
 
   return (
     <PageTemplate title={t('title')} description={t('description')}>
-      <Section className="bg-warm-white">
-        <div className="max-w-2xl mx-auto">
-          <ContactForm />
-          <CalendarEmbed url={process.env.NEXT_PUBLIC_CALENDAR_URL} title={t('calendarTitle')} />
-        </div>
-      </Section>
+      <ContactSection showHeading={false} formOpen />
     </PageTemplate>
   );
 }

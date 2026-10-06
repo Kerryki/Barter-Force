@@ -43,32 +43,22 @@ export function CookieBanner() {
   if (!pending) return null;
 
   return (
-    <div
-      role="region"
-      aria-label={t('title')}
-      className="fixed bottom-0 left-0 right-0 bg-charcoal text-warm-white p-6 shadow-2xl z-50"
-    >
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="flex-1">
-          <h3 className="font-serif font-bold text-lg mb-2">{t('title')}</h3>
-          <p className="text-sm text-gray-300">
+    <div role="region" aria-label={t('title')} className="cookiebar">
+      <div className="wrap">
+        <div>
+          <h3>{t('title')}</h3>
+          <p>
             {t('description')}{' '}
-            <Link href={`/${locale}/privacy`} className="underline hover:text-gold">
+            <Link href={`/${locale}/privacy`} style={{ textDecoration: 'underline' }}>
               {t('learnMore')}
             </Link>
           </p>
         </div>
-        <div className="flex gap-4 flex-shrink-0">
-          <button
-            onClick={reject}
-            className="px-4 py-2 border border-gold text-gold rounded-md hover:bg-gold hover:text-charcoal transition-colors text-sm font-medium"
-          >
+        <div className="actions">
+          <button type="button" className="btn ghost" onClick={reject}>
             {t('rejectLabel')}
           </button>
-          <button
-            onClick={accept}
-            className="px-4 py-2 bg-gold text-charcoal rounded-md hover:bg-warm-white transition-colors text-sm font-medium"
-          >
+          <button type="button" className="btn" onClick={accept}>
             {t('acceptLabel')}
           </button>
         </div>

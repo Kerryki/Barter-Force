@@ -42,6 +42,13 @@ describe('contactFormSchema', () => {
     expect(errorKeys({ ...valid, topic: 'barter' })).toContain('topicRequired');
   });
 
+  it('treats the message as optional', () => {
+    expect(contactFormSchema.safeParse({ ...valid, message: '' }).success).toBe(true);
+    const { message: _m, ...rest } = valid;
+    const result = contactFormSchema.safeParse(rest);
+    expect(result.success && result.data.message).toBe('');
+  });
+
   it('requires consent to be true', () => {
     expect(errorKeys({ ...valid, consent: false })).toContain('consentRequired');
   });
@@ -49,7 +56,6 @@ describe('contactFormSchema', () => {
   it('validates name, email and message', () => {
     expect(errorKeys({ ...valid, name: 'A' })).toContain('nameTooShort');
     expect(errorKeys({ ...valid, email: 'nope' })).toContain('emailInvalid');
-    expect(errorKeys({ ...valid, message: 'short' })).toContain('messageTooShort');
     expect(errorKeys({ ...valid, message: 'x'.repeat(5001) })).toContain('messageTooLong');
   });
 

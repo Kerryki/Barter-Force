@@ -14,7 +14,7 @@ import '@/styles/globals.css';
 
 // Only these namespaces are used by client components; everything else renders on the server
 // and does not need to be sent to the browser.
-const CLIENT_NAMESPACES = ['common', 'nav', 'cookies', 'faq'] as const;
+const CLIENT_NAMESPACES = ['common', 'nav', 'cookies', 'glossary', 'budget', 'leverage', 'assistant'] as const;
 
 interface Props {
   children: React.ReactNode;
@@ -52,16 +52,14 @@ export default async function LocaleLayout({ children, params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(generateOrganization()).replace(/</g, '\\u003c') }}
         />
       </head>
-      <body className="font-sans bg-warm-white text-charcoal">
+      <body>
         <NextIntlClientProvider messages={messages}>
           <a href="#main-content" className="skip-to-content">
             {tCommon('skipToContent')}
           </a>
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-grow" id="main-content">{children}</main>
-            <Footer />
-          </div>
+          <Header />
+          <main id="main-content">{children}</main>
+          <Footer />
           <CookieBanner />
           <Analytics />
         </NextIntlClientProvider>
