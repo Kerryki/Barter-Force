@@ -71,4 +71,4 @@ In production the contact endpoint returns 503 if the Resend variables are missi
 
 ## Deployment
 
-See `.claude/DEPLOYMENT.md`.
+See `docs/DEPLOYMENT.md`.

@@ -14,4 +14,4 @@ Original build (Oct 2): six phases producing a peer-to-peer skill-bartering mark
 
 ## Known open items
 
-See `.claude/DEPLOYMENT.md` ("Before launch"). Tailwind 3 build-toolchain advisories remain until a Tailwind 4 migration.
+See `docs/DEPLOYMENT.md` ("Before launch"). Tailwind 3 build-toolchain advisories remain until a Tailwind 4 migration.
