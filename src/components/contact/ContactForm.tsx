@@ -3,7 +3,7 @@
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, type FieldErrors, type UseFormRegister } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useContactSubmit } from '@/components/contact/useContactSubmit';
 import {
@@ -42,28 +42,17 @@ function Field({ id, label, error, children }: FieldProps) {
   );
 }
 
-export function ContactForm() {
+interface FieldsProps {
+  register: UseFormRegister<ContactFormInput>;
+  errors: FieldErrors<ContactFormInput>;
+}
+
+function ContactFields({ register, errors }: FieldsProps) {
   const t = useTranslations('contact.form');
-  const locale = useLocale();
-  const { status, errorMessage, firstName, submit } = useContactSubmit(locale, t('errorMessage'));
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm<ContactFormInput, unknown, ContactFormData>({
-    resolver: zodResolver(contactFormSchema),
-    defaultValues: { topic: undefined, consent: false },
-  });
-
   const fieldError = (message?: string) => (message ? t(`errors.${message}`) : undefined);
-  const onSubmit = async (data: ContactFormData) => {
-    if (await submit(data)) reset();
-  };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate>
+    <>
       <Field id="name" label={t('nameLabel')} error={fieldError(errors.name?.message)}>
         {(a11y) => <input {...a11y} type="text" autoComplete="name" aria-required="true" {...register('name')} />}
       </Field>
@@ -90,20 +79,22 @@ export function ContactForm() {
       <Field id="message" label={t('messageLabel')} error={fieldError(errors.message?.message)}>
         {(a11y) => <textarea {...a11y} {...register('message')} />}
       </Field>
+    </>
+  );
+}
 
-      {/* Honeypot: hidden from people and assistive tech; bots tend to fill it */}
-      <div aria-hidden="true" style={{ position: 'absolute', left: -9999 }}>
-        <label htmlFor="website">Website</label>
-        <input id="website" type="text" tabIndex={-1} autoComplete="off" {...register('website')} />
-      </div>
-
+function ConsentField({ register, error }: { register: UseFormRegister<ContactFormInput>; error?: string }) {
+  const t = useTranslations('contact.form');
+  const locale = useLocale();
+  return (
+    <>
       <div className="check">
         <input
           id="consent"
           type="checkbox"
           aria-required="true"
-          aria-invalid={Boolean(errors.consent)}
-          aria-describedby={errors.consent ? 'consent-error' : undefined}
+          aria-invalid={Boolean(error)}
+          aria-describedby={error ? 'consent-error' : undefined}
           {...register('consent')}
         />
         <label htmlFor="consent" style={{ margin: 0 }}>
@@ -114,11 +105,45 @@ export function ContactForm() {
           .
         </label>
       </div>
-      {errors.consent && (
+      {error && (
         <p id="consent-error" role="alert" className="field-error">
-          {fieldError(errors.consent.message)}
+          {error}
         </p>
       )}
+    </>
+  );
+}
+
+export function ContactForm() {
+  const t = useTranslations('contact.form');
+  const locale = useLocale();
+  const { status, errorMessage, firstName, submit } = useContactSubmit(locale, t('errorMessage'));
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<ContactFormInput, unknown, ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: { topic: undefined, consent: false },
+  });
+
+  const onSubmit = async (data: ContactFormData) => {
+    if (await submit(data)) reset();
+  };
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)} noValidate>
+      <ContactFields register={register} errors={errors} />
+
+      {/* Honeypot: hidden from people and assistive tech; bots tend to fill it */}
+      <div aria-hidden="true" style={{ position: 'absolute', left: -9999 }}>
+        <label htmlFor="website">Website</label>
+        <input id="website" type="text" tabIndex={-1} autoComplete="off" {...register('website')} />
+      </div>
+
+      <ConsentField register={register} error={errors.consent && t(`errors.${errors.consent.message}`)} />
 
       <div aria-live="polite">
         {status === 'success' && <p className="status ok">{t('successMessage', { firstName })}</p>}

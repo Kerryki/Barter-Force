@@ -14,9 +14,14 @@ export interface BudgetResult {
   barPercent: number;
 }
 
+/** Largest amount the tools accept, so absurd input cannot produce Infinity or NaN. */
+export const MAX_AMOUNT = 1_000_000_000;
+
 /** Parse a user-entered amount: anything that is not a positive number counts as 0. */
 export function parseAmount(value: string): number {
-  return Math.max(0, parseFloat(value) || 0);
+  const amount = parseFloat(value);
+  if (!Number.isFinite(amount)) return Number.isNaN(amount) || amount < 0 ? 0 : MAX_AMOUNT;
+  return Math.min(MAX_AMOUNT, Math.max(0, amount));
 }
 
 /** Compare monthly income and spending with the common 50/30/20 guide. */

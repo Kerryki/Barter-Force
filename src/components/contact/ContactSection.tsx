@@ -1,8 +1,9 @@
 import { useTranslations } from 'next-intl';
-import { CalendarEmbed, getCalendarLinks } from '@/components/contact/CalendarEmbed';
+import { CalendarEmbed } from '@/components/contact/CalendarEmbed';
 import { ContactForm } from '@/components/contact/ContactForm';
 import { Section } from '@/components/layout/Section';
 import { broker } from '@/content/broker';
+import { getCalendarLinks } from '@/lib/calendar';
 
 interface ContactSectionProps {
   /** Show the "Begin with a conversation" heading (the /contact page has its own title). */

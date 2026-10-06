@@ -20,7 +20,9 @@ export function InsuranceSection() {
         <table className="cmp">
           <thead>
             <tr>
-              <td />
+              <td>
+                <span style={{ position: 'absolute', left: -9999 }}>{t('aspect')}</span>
+              </td>
               <th scope="col">{t('term')}</th>
               <th scope="col">{t('permanent')}</th>
             </tr>

@@ -3,16 +3,30 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/Section';
-
-interface Suggestion {
-  label: string;
-  question: string;
-  answer: string;
-}
+import { answerFor, type Suggestion } from '@/lib/assistant';
 
 interface ChatMessage {
   from: 'bot' | 'me';
   text: string;
+}
+
+/** Chat state: every question is answered from fixed text (see `answerFor`). */
+function useAssistantChat(suggestions: Suggestion[], greeting: string, unavailable: string) {
+  const [messages, setMessages] = useState<ChatMessage[]>([{ from: 'bot', text: greeting }]);
+
+  /** Returns false when there was nothing to ask. */
+  const ask = (question: string): boolean => {
+    const text = question.trim();
+    if (!text) return false;
+    setMessages((prev) => [
+      ...prev,
+      { from: 'me', text },
+      { from: 'bot', text: answerFor(text, suggestions, unavailable) },
+    ]);
+    return true;
+  };
+
+  return { messages, ask };
 }
 
 /**
@@ -22,7 +36,7 @@ interface ChatMessage {
 export function AssistantSection() {
   const t = useTranslations('assistant');
   const suggestions = t.raw('suggestions') as Suggestion[];
-  const [messages, setMessages] = useState<ChatMessage[]>([{ from: 'bot', text: t('greeting') }]);
+  const { messages, ask } = useAssistantChat(suggestions, t('greeting'), t('unavailable'));
   const [draft, setDraft] = useState('');
   const logRef = useRef<HTMLDivElement>(null);
 
@@ -30,21 +44,9 @@ export function AssistantSection() {
     logRef.current?.scrollTo({ top: logRef.current.scrollHeight });
   }, [messages]);
 
-  const ask = (question: string) => {
-    const text = question.trim();
-    if (!text) return;
-    const known = suggestions.find((s) => s.question === text);
-    setMessages((prev) => [
-      ...prev,
-      { from: 'me', text },
-      { from: 'bot', text: known ? known.answer : t('unavailable') },
-    ]);
-    setDraft('');
-  };
-
   const onSubmit = (event: FormEvent) => {
     event.preventDefault();
-    ask(draft);
+    if (ask(draft)) setDraft('');
   };
 
   return (

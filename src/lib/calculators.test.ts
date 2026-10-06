@@ -14,6 +14,13 @@ describe('parseAmount', () => {
     expect(parseAmount('-50')).toBe(0);
     expect(parseAmount('1200.5')).toBe(1200.5);
   });
+
+  it('caps huge input so results never become NaN or Infinity', () => {
+    expect(parseAmount('1e999')).toBe(1_000_000_000);
+    expect(parseAmount('-1e999')).toBe(0);
+    const r = computeBudget(parseAmount('1e999'), 0, 0);
+    expect(Number.isFinite(r.left) && Number.isFinite(r.rate) && Number.isFinite(r.barPercent)).toBe(true);
+  });
 });
 
 describe('computeBudget', () => {

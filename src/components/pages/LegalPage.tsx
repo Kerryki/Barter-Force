@@ -19,14 +19,14 @@ export function LegalPage({ namespace }: LegalPageProps) {
           </p>
           <p className="fine" style={{ marginTop: 0 }}>{t('lastUpdated')}</p>
           {sections.map((section, idx) => (
-            <section key={section.heading} style={{ padding: 0 }}>
+            <div key={section.heading}>
               <h2>
                 {idx + 1}. {section.heading}
               </h2>
               {section.paragraphs.map((p) => (
                 <p key={p}>{p}</p>
               ))}
-            </section>
+            </div>
           ))}
         </div>
       </Section>

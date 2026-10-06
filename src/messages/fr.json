@@ -1,7 +1,6 @@
 {
   "common": {
     "logo": "Barter Force",
-    "tagline": "Les finances, en toute clarté.",
     "skipToContent": "Passer au contenu principal",
     "logoAlt": "Logo de Barter Force"
   },
@@ -13,7 +12,6 @@
     "learning": "Centre d'apprentissage",
     "contact": "Contact",
     "bookConsultation": "Prendre rendez-vous",
-    "menu": "Menu",
     "budget": "Budget",
     "credit": "Crédit",
     "insurance": "Assurance",
@@ -360,9 +358,7 @@
     "form": {
       "nameLabel": "Votre nom",
       "emailLabel": "Courriel",
-      "emailPlaceholder": "votre.courriel@exemple.com",
       "phoneLabel": "Téléphone (facultatif)",
-      "phonePlaceholder": "514-555-0123",
       "topicLabel": "Avec quoi aimeriez-vous de l'aide?",
       "topicPlaceholder": "Choisissez une option",
       "topics": {
@@ -373,7 +369,6 @@
         "notSure": "Je ne suis pas encore certain"
       },
       "messageLabel": "Autre chose que vous aimeriez me dire (facultatif)",
-      "messagePlaceholder": "Parlez-moi brièvement de votre situation",
       "consentLabel": "J'accepte d'être contacté au sujet de ma demande et j'ai lu la",
       "privacyLinkLabel": "Politique de confidentialité",
       "sendLabel": "Demander ma consultation",
@@ -406,7 +401,6 @@
     "glossaryDescription": "Les termes financiers essentiels expliqués en langage courant.",
     "articlesTitle": "Articles",
     "articlesDescription": "Guides approfondis sur les hypothèques, les placements, le crédit et la protection.",
-    "readMore": "Lire la suite",
     "backToLearning": "Retour au Centre d'apprentissage",
     "noArticles": "Aucun article disponible pour le moment."
   },
@@ -639,7 +633,8 @@
         "text": "Cette couverture peut prendre fin si vous changez d'emploi ou de prêt. Nous vérifions ce que vous conserveriez et la comparons à une police personnelle."
       }
     ],
-    "fine": "La couverture dépend de l'admissibilité, des questions de santé et de l'approbation de l'assureur. [TODO: ajoutez votre permis d'assurance et vos assureurs partenaires.]"
+    "fine": "La couverture dépend de l'admissibilité, des questions de santé et de l'approbation de l'assureur. [TODO: ajoutez votre permis d'assurance et vos assureurs partenaires.]",
+    "aspect": "Aspect"
   },
   "assistant": {
     "title": "Des questions à toute heure? Demandez à l'assistant.",

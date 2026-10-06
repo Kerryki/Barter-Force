@@ -1,7 +1,6 @@
 {
   "common": {
     "logo": "Barter Force",
-    "tagline": "Money matters, made clear.",
     "skipToContent": "Skip to main content",
     "logoAlt": "Barter Force logo"
   },
@@ -13,7 +12,6 @@
     "learning": "Learning centre",
     "contact": "Contact",
     "bookConsultation": "Book a consultation",
-    "menu": "Menu",
     "budget": "Budget",
     "credit": "Credit",
     "insurance": "Insurance",
@@ -360,9 +358,7 @@
     "form": {
       "nameLabel": "Your name",
       "emailLabel": "Email",
-      "emailPlaceholder": "your.email@example.com",
       "phoneLabel": "Phone (optional)",
-      "phonePlaceholder": "514-555-0123",
       "topicLabel": "What would you like help with?",
       "topicPlaceholder": "Choose one",
       "topics": {
@@ -373,7 +369,6 @@
         "notSure": "I am not sure yet"
       },
       "messageLabel": "Anything you would like me to know (optional)",
-      "messagePlaceholder": "Tell me a little about your situation",
       "consentLabel": "I agree to be contacted about my request and I have read the",
       "privacyLinkLabel": "Privacy Policy",
       "sendLabel": "Request my consultation",
@@ -406,7 +401,6 @@
     "glossaryDescription": "Essential finance terms explained in plain language.",
     "articlesTitle": "Articles",
     "articlesDescription": "In-depth guides on mortgages, investing, credit and protection.",
-    "readMore": "Read more",
     "backToLearning": "Back to Learning Centre",
     "noArticles": "No articles available yet."
   },
@@ -639,7 +633,8 @@
         "text": "That coverage can end when you change jobs or loans. We check what you would keep, and compare it with a personal policy."
       }
     ],
-    "fine": "Coverage depends on eligibility, health questions and the insurer's approval. [TODO: add your insurance licence details and insurer partners.]"
+    "fine": "Coverage depends on eligibility, health questions and the insurer's approval. [TODO: add your insurance licence details and insurer partners.]",
+    "aspect": "Aspect"
   },
   "assistant": {
     "title": "Questions at any hour? Ask the assistant.",

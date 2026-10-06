@@ -5,14 +5,35 @@ import { useLocale, useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/Section';
 import { computeLeverage, formatMoney, withSign } from '@/lib/calculators';
 
-export function LeverageSection() {
+function LeverageResults({ change }: { change: number }) {
   const t = useTranslations('leverage');
   const locale = useLocale();
-  const id = useId();
-  const [change, setChange] = useState(5);
   const r = computeLeverage(change);
   const tone = change < 0 ? 'neg' : '';
   const percent = (n: number) => `${n.toFixed(0)}%`;
+
+  return (
+    <div aria-live="polite">
+      <div className="row">
+        <span>{t('rowChange')}</span>
+        <b className={tone}>{withSign(r.gain, (n) => formatMoney(n, locale))}</b>
+      </div>
+      <div className="row">
+        <span>{t('rowLeveraged')}</span>
+        <b className={tone}>{withSign(r.leveragedReturn, percent)}</b>
+      </div>
+      <div className="row">
+        <span>{t('rowPlain')}</span>
+        <b className={tone}>{withSign(r.plainReturn, (n) => `${n}%`)}</b>
+      </div>
+    </div>
+  );
+}
+
+export function LeverageSection() {
+  const t = useTranslations('leverage');
+  const id = useId();
+  const [change, setChange] = useState(5);
 
   return (
     <Section id="leverage" className="band" wrapClassName="two">
@@ -40,20 +61,7 @@ export function LeverageSection() {
         </label>
         <input id={`${id}-slider`} type="range" min={-15} max={20} step={1} value={change}
           onChange={(e) => setChange(Number(e.target.value))} />
-        <div aria-live="polite">
-          <div className="row">
-            <span>{t('rowChange')}</span>
-            <b className={tone}>{withSign(r.gain, (n) => formatMoney(n, locale))}</b>
-          </div>
-          <div className="row">
-            <span>{t('rowLeveraged')}</span>
-            <b className={tone}>{withSign(r.leveragedReturn, percent)}</b>
-          </div>
-          <div className="row">
-            <span>{t('rowPlain')}</span>
-            <b className={tone}>{withSign(r.plainReturn, (n) => `${n}%`)}</b>
-          </div>
-        </div>
+        <LeverageResults change={change} />
         <p className="fine">{t('fine')}</p>
       </div>
     </Section>
